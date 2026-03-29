@@ -1,6 +1,5 @@
-# test_extractor.py
 from dotenv import load_dotenv
-load_dotenv()  # MUST be first line before any other imports
+load_dotenv()
 
 import os
 from utils.loader import load_patient_notes

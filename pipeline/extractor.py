@@ -1,12 +1,10 @@
-# pipeline/extractor.py
 import os
 import json
 import time
 from openai import OpenAI
 from tenacity import retry, stop_after_attempt, wait_exponential
 
-
-# DO NOT create client at module level — env vars not loaded yet at import time
+# DO NOT create client at module level becoz .env loads after import.
 # Instead use get_client() which is called AFTER load_dotenv() has run
 def get_client():
     return OpenAI(
@@ -15,7 +13,7 @@ def get_client():
     )
 
 def get_model():
-    return os.environ.get("OPENAI_MODEL", "gemini-2.0-flash")
+    return os.environ.get("OPENAI_MODEL", "llama-3.3-70b-versatile")
 
 
 EXTRACTION_SYSTEM_PROMPT = """You are a medical information extraction assistant.
@@ -38,7 +36,7 @@ EXCLUDE:
 - Medications, procedures, normal lab values
 
 For each condition return:
-- condition_name: specific diagnosis name, max 80 chars
+- condition_name: specific diagnosis name, max 40 chars
 - section: which section it is in (e.g. "Diagnoses", "Medical History", "CT Findings")
 - status_hint: signal words, max 40 chars (e.g. "in Diagnoses section", "history of")
 - onset_hint: date only, max 20 chars (e.g. "05/2014", "2018", "unknown")
@@ -52,7 +50,6 @@ NOTE EXCERPT:
 
 
 def clean_json_response(raw: str) -> str:
-    """Cleans Gemini output to extract valid JSON."""
     raw = raw.strip()
 
     # Strip markdown code fences
@@ -76,7 +73,7 @@ def clean_json_response(raw: str) -> str:
         else:
             raw = raw[min(bracket, brace):]
 
-    # Fix newlines inside string values (Gemini quirk)
+    # Fix newlines inside string values by replacing them with spaces.
     def fix_newlines_in_strings(text):
         result = []
         in_string = False
@@ -111,12 +108,9 @@ def clean_json_response(raw: str) -> str:
     return raw.strip()
 
 
-def split_into_chunks(numbered_text: str, chunk_size: int = 40) -> list:
-    """
-    Splits note into chunks of 40 lines each.
-    WHY: Gemini's OpenAI-compatible layer truncates long outputs.
-    40 lines per chunk keeps the JSON response short and complete.
-    """
+
+def split_into_chunks(numbered_text: str, chunk_size: int = 70) -> list:
+    
     lines = numbered_text.split("\n")
     chunks = []
     for i in range(0, len(lines), chunk_size):
@@ -129,6 +123,7 @@ def split_into_chunks(numbered_text: str, chunk_size: int = 40) -> list:
     stop=stop_after_attempt(3),
     wait=wait_exponential(multiplier=2, min=5, max=60)
 )
+
 def extract_from_chunk(chunk_text: str, note_id: str) -> list:
     """Extracts conditions from one 40-line chunk of a note."""
 
@@ -145,7 +140,7 @@ def extract_from_chunk(chunk_text: str, note_id: str) -> list:
             {"role": "system", "content": EXTRACTION_SYSTEM_PROMPT},
             {"role": "user",   "content": prompt}
         ],
-        temperature=1.0,
+        temperature=0.0,
         max_tokens=2000
     )
 
@@ -165,21 +160,16 @@ def extract_from_chunk(chunk_text: str, note_id: str) -> list:
 
 
 def extract_from_note(note: dict) -> list:
-    """
-    Extracts all conditions from a note by processing 40-line chunks.
-    Combines results and deduplicates by line number.
-    """
-    chunks = split_into_chunks(note["numbered_text"], chunk_size=40)
+    
+    chunks = split_into_chunks(note["numbered_text"], chunk_size=70)
     all_conditions = []
 
     for i, chunk in enumerate(chunks):
         conditions = extract_from_chunk(chunk, note["note_id"])
         all_conditions.extend(conditions)
-        # Wait between chunks to stay under Gemini rate limits (15 req/min)
         if i < len(chunks) - 1:
-            time.sleep(4)
+            time.sleep(2)
 
-    # Deduplicate: keep first occurrence of each line_no
     seen_lines = set()
     unique_conditions = []
     for c in all_conditions:
@@ -188,7 +178,6 @@ def extract_from_note(note: dict) -> list:
             seen_lines.add(line_no)
             unique_conditions.append(c)
 
-    # Tag every condition with which note it came from
     for c in unique_conditions:
         c["source_note_id"]      = note["note_id"]
         c["note_encounter_date"] = note["encounter_date"]
