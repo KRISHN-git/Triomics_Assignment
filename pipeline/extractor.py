@@ -4,8 +4,6 @@ import time
 from openai import OpenAI
 from tenacity import retry, stop_after_attempt, wait_exponential
 
-# DO NOT create client at module level becoz .env loads after import.
-# Instead use get_client() which is called AFTER load_dotenv() has run
 def get_client():
     return OpenAI(
         base_url=os.environ.get("OPENAI_BASE_URL"),
@@ -16,10 +14,7 @@ def get_model():
     return os.environ.get("OPENAI_MODEL", "llama-3.3-70b-versatile")
 
 
-EXTRACTION_SYSTEM_PROMPT = """You are a medical information extraction assistant.
-Return ONLY a valid JSON array. Start with [ and end with ].
-No markdown. No explanation. No extra text."""
-
+EXTRACTION_SYSTEM_PROMPT = """Extract medical conditions. Return JSON array only. No markdown."""
 
 EXTRACTION_USER_PROMPT = """List every medical condition in this clinical note excerpt.
 
@@ -29,14 +24,21 @@ INCLUDE:
 - Past conditions ("history of", "status post")
 - Specific named findings (named metastases, named fractures, named varices)
 
-EXCLUDE:
-- Symptoms alone: pain, fatigue, nausea, fever, swelling
-- Negative findings: "no evidence of", "no signs of", "unremarkable"
+EXCLUDE — be strict about these:
+- Symptoms alone: pain, fatigue, nausea, fever, swelling, bleeding
+- Lab values: hemoglobin levels, creatinine values, CRP values
+- Negative findings: "no evidence of", "no signs of", "unremarkable", "within normal"
 - Vague words: "tumor", "lesion", "mass" without a specific diagnosis name
-- Medications, procedures, normal lab values
+- Medications and dosages
+- Procedures: surgery, biopsy, gastroscopy, kyphoplasty, resection
+- Normal examination findings
+- Elevated/reduced lab markers alone (e.g. "elevated LDH", "reduced hemoglobin")
+
+A clinical note with 1-2 pages should have at most 10-15 conditions.
+Be conservative — only extract named, confirmed or suspected diagnoses.
 
 For each condition return:
-- condition_name: specific diagnosis name, max 40 chars
+- condition_name: specific diagnosis name, max 80 chars
 - section: which section it is in (e.g. "Diagnoses", "Medical History", "CT Findings")
 - status_hint: signal words, max 40 chars (e.g. "in Diagnoses section", "history of")
 - onset_hint: date only, max 20 chars (e.g. "05/2014", "2018", "unknown")
@@ -48,11 +50,9 @@ Return ONLY a JSON array [ ... ]. Nothing else.
 NOTE EXCERPT:
 {chunk_text}"""
 
-
 def clean_json_response(raw: str) -> str:
     raw = raw.strip()
 
-    # Strip markdown code fences
     if raw.startswith("```"):
         lines = raw.split("\n")
         lines = lines[1:]
@@ -60,7 +60,6 @@ def clean_json_response(raw: str) -> str:
             lines = lines[:-1]
         raw = "\n".join(lines).strip()
 
-    # Skip any text before the JSON array
     if not raw.startswith("[") and not raw.startswith("{"):
         bracket = raw.find("[")
         brace   = raw.find("{")
@@ -73,7 +72,6 @@ def clean_json_response(raw: str) -> str:
         else:
             raw = raw[min(bracket, brace):]
 
-    # Fix newlines inside string values by replacing them with spaces.
     def fix_newlines_in_strings(text):
         result = []
         in_string = False
@@ -96,7 +94,6 @@ def clean_json_response(raw: str) -> str:
 
     raw = fix_newlines_in_strings(raw)
 
-    # Close truncated arrays
     raw = raw.strip()
     if not raw.endswith("]"):
         last_complete = raw.rfind("},")
@@ -109,7 +106,7 @@ def clean_json_response(raw: str) -> str:
 
 
 
-def split_into_chunks(numbered_text: str, chunk_size: int = 70) -> list:
+def split_into_chunks(numbered_text: str, chunk_size: int = 100) -> list:
     
     lines = numbered_text.split("\n")
     chunks = []
@@ -123,11 +120,8 @@ def split_into_chunks(numbered_text: str, chunk_size: int = 70) -> list:
     stop=stop_after_attempt(3),
     wait=wait_exponential(multiplier=2, min=5, max=60)
 )
-
 def extract_from_chunk(chunk_text: str, note_id: str) -> list:
-    """Extracts conditions from one 40-line chunk of a note."""
 
-    # Skip chunks that are mostly empty
     non_empty = [l for l in chunk_text.split("\n") if l.strip()]
     if len(non_empty) < 3:
         return []
@@ -141,7 +135,7 @@ def extract_from_chunk(chunk_text: str, note_id: str) -> list:
             {"role": "user",   "content": prompt}
         ],
         temperature=0.0,
-        max_tokens=2000
+        max_tokens=800
     )
 
     raw = response.choices[0].message.content
@@ -161,7 +155,7 @@ def extract_from_chunk(chunk_text: str, note_id: str) -> list:
 
 def extract_from_note(note: dict) -> list:
     
-    chunks = split_into_chunks(note["numbered_text"], chunk_size=70)
+    chunks = split_into_chunks(note["numbered_text"], chunk_size=100)
     all_conditions = []
 
     for i, chunk in enumerate(chunks):

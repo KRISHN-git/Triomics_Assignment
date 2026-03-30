@@ -1,7 +1,6 @@
 from pathlib import Path
 import re
 
-# Fetch the date of the medical encounter from the note.
 def extract_encounter_date(lines: list[str]) -> str:
    
     for line in lines[:10]:
@@ -16,7 +15,6 @@ def extract_encounter_date(lines: list[str]) -> str:
     return "unknown"  
 
 
-# Loads all notes for a patient and prepares them for LLM processing.
 def load_patient_notes(data_dir: str, patient_id: str) -> list[dict]:
     
     patient_dir = Path(data_dir) / patient_id
