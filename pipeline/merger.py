@@ -58,21 +58,7 @@ RULES:
 Note encounter dates: {note_dates_json}
 
 Per-note extractions: {extractions_json}
-
-OUTPUT — return ONLY this JSON array, nothing else:
-[
-  {{
-    "condition_name": "Left midline tongue carcinoma",
-    "category": "cancer",
-    "subcategory": "primary_malignancy",
-    "status": "active",
-    "onset": "May 2014",
-    "evidence": [
-      {{"note_id": "text_0", "line_no": 13, "span": "Left midline tongue carcinoma pT1"}}
-    ]
-  }}
-]"""
-
+"""
 
 def clean_json_response(raw: str) -> str:
     """Cleans LLM output to extract valid JSON."""
@@ -188,8 +174,8 @@ def merge_and_classify(all_extractions: dict, note_dates: dict) -> list:
 
 
 @retry(
-    stop=stop_after_attempt(3),
-    wait=wait_exponential(multiplier=2, min=5, max=60)
+    stop=stop_after_attempt(5),
+    wait=wait_exponential(multiplier=2, min=15, max=120)
 )
 def _merge_batch(extractions: dict, note_dates: dict) -> list:
     """Single merger API call for one batch."""

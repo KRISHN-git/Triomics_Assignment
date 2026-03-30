@@ -117,8 +117,8 @@ def split_into_chunks(numbered_text: str, chunk_size: int = 100) -> list:
 
 
 @retry(
-    stop=stop_after_attempt(3),
-    wait=wait_exponential(multiplier=2, min=5, max=60)
+    stop=stop_after_attempt(5),
+    wait=wait_exponential(multiplier=2, min=15, max=120)
 )
 def extract_from_chunk(chunk_text: str, note_id: str) -> list:
 
@@ -162,7 +162,7 @@ def extract_from_note(note: dict) -> list:
         conditions = extract_from_chunk(chunk, note["note_id"])
         all_conditions.extend(conditions)
         if i < len(chunks) - 1:
-            time.sleep(2)
+            time.sleep(6)
 
     seen_lines = set()
     unique_conditions = []

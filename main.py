@@ -6,10 +6,10 @@ import json
 import logging
 import os
 import sys
+import time
+
 from pathlib import Path
-
 from tqdm import tqdm
-
 from utils.loader       import load_patient_notes
 from pipeline.extractor import extract_from_note
 from pipeline.merger    import merge_and_classify
@@ -39,7 +39,7 @@ def check_environment():
 
 
 def process_patient(data_dir, patient_id, output_dir, verbose=False):
-    """Runs full pipeline for one patient: load→extract→merge→validate→save."""
+
     stats = {
         "patient_id": patient_id,
         "notes_processed": 0,
@@ -121,6 +121,7 @@ def main():
             continue
         stats = process_patient(args.data_dir, patient_id, args.output_dir, args.verbose)
         all_stats.append(stats)
+        time.sleep(10)
 
     successful = [s for s in all_stats if s["error"] is None]
     failed     = [s for s in all_stats if s["error"] is not None]
