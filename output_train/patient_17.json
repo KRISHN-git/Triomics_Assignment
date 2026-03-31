@@ -1,0 +1,611 @@
+{
+  "patient_id": "patient_17",
+  "conditions": [
+    {
+      "condition_name": "ARDS",
+      "category": "pulmonary",
+      "subcategory": "acute_respiratory",
+      "status": "active",
+      "onset": "09/28/2021",
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 7,
+          "span": "ARDS in the context of a COVID-19 infect"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 6,
+          "span": "ARDS due to COVID-19 pneumonia"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 134,
+          "span": "ARDS therapy"
+        }
+      ]
+    },
+    {
+      "condition_name": "Retinal central serous chorioretinopathy",
+      "category": "neurological",
+      "subcategory": "degenerative",
+      "status": "resolved",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 11,
+          "span": "Left eye pigment epithelium clumping"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 11,
+          "span": "suggestive of a history of retinal centr"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 35,
+          "span": "Left eye pigment epithelium clumping, su"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 36,
+          "span": "Left eye pigment epithelium clumping, su"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 42,
+          "span": "retinal central serous chorioretinopathy"
+        }
+      ]
+    },
+    {
+      "condition_name": "Uveitis",
+      "category": "neurological",
+      "subcategory": "degenerative",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 14,
+          "span": "Uveitis"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 16,
+          "span": "Uveitis"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 40,
+          "span": "Uveitis"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 41,
+          "span": "Uveitis"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 49,
+          "span": "Uveitis"
+        }
+      ]
+    },
+    {
+      "condition_name": "Bronchial asthma",
+      "category": "pulmonary",
+      "subcategory": "obstructive",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 16,
+          "span": "Bronchial asthma"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 18,
+          "span": "Bronchial asthma"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 51,
+          "span": "Bronchial asthma"
+        }
+      ]
+    },
+    {
+      "condition_name": "Arterial hypertension",
+      "category": "cardiovascular",
+      "subcategory": "hypertensive",
+      "status": "active",
+      "onset": "05/2021",
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 18,
+          "span": "Arterial hypertension"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 20,
+          "span": "Arterial hypertension"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 317,
+          "span": "Mildly elevated blood pressure (hyperten"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 53,
+          "span": "Arterial hypertension"
+        }
+      ]
+    },
+    {
+      "condition_name": "Depression",
+      "category": "neurological",
+      "subcategory": "functional",
+      "status": "active",
+      "onset": "2011",
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 20,
+          "span": "Depression"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 22,
+          "span": "Depression"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 421,
+          "span": "known depression"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 55,
+          "span": "Depression"
+        }
+      ]
+    },
+    {
+      "condition_name": "Atypical pneumonia",
+      "category": "pulmonary",
+      "subcategory": "obstructive",
+      "status": "active",
+      "onset": "09/30/2021",
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 66,
+          "span": "radiological suspicion of atypical pneum"
+        }
+      ]
+    },
+    {
+      "condition_name": "Bilateral interstitial pneumonia",
+      "category": "pulmonary",
+      "subcategory": "structural",
+      "status": "active",
+      "onset": "09/28/2021",
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 28,
+          "span": "bilateral interstitial pneumonia with CO"
+        }
+      ]
+    },
+    {
+      "condition_name": "COVID-19",
+      "category": "infectious",
+      "subcategory": "viral",
+      "status": "active",
+      "onset": "09/24/2021",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 25,
+          "span": "confirmed SARS-CoV-2 infection"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 9,
+          "span": "COVID-19 with severe ARDS"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 108,
+          "span": "COVID-19"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 8,
+          "span": "COVID-19 with severe ARDS"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 142,
+          "span": "context of COVID-19"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 16,
+          "span": "COVID-19 with severe ARDS"
+        }
+      ]
+    },
+    {
+      "condition_name": "Pulmonary superinfection",
+      "category": "pulmonary",
+      "subcategory": "obstructive",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_2",
+          "line_no": 22,
+          "span": "Pulmonary superinfection with detection "
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 23,
+          "span": "Pulmonary superinfection with detection "
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 31,
+          "span": "Pulmonary superinfection"
+        }
+      ]
+    },
+    {
+      "condition_name": "Bacteremia",
+      "category": "infectious",
+      "subcategory": "bacterial",
+      "status": "active",
+      "onset": "10/19/21",
+      "evidence": [
+        {
+          "note_id": "text_2",
+          "line_no": 26,
+          "span": "Bacteremia with detection of Staphylococ"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 27,
+          "span": "Bacteremia with detection of Staphylococ"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 36,
+          "span": "Bacteremia"
+        }
+      ]
+    },
+    {
+      "condition_name": "Thrombophlebitis",
+      "category": "cardiovascular",
+      "subcategory": "vascular",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_2",
+          "line_no": 31,
+          "span": "Thrombophlebitis of the right forearm"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 32,
+          "span": "Thrombophlebitis of the right forearm"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 40,
+          "span": "Thrombophlebitis"
+        }
+      ]
+    },
+    {
+      "condition_name": "Rheumatoid arthritis",
+      "category": "musculoskeletal",
+      "subcategory": "connective_tissue_disorder",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 14,
+          "span": "Rheumatoid arthritis"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 38,
+          "span": "Rheumatoid arthritis"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 104,
+          "span": "rheumatoid arthritis"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 39,
+          "span": "Rheumatoid arthritis"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 47,
+          "span": "Rheumatoid arthritis"
+        }
+      ]
+    },
+    {
+      "condition_name": "Fungal Infection",
+      "category": "infectious",
+      "subcategory": "fungal",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_2",
+          "line_no": 106,
+          "span": "fungal infection"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 138,
+          "span": "Aspergillus in tracheobronchial secretio"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 257,
+          "span": "Aspergillosis"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 367,
+          "span": "Aspergillus and pneumonia"
+        }
+      ]
+    },
+    {
+      "condition_name": "Delirium",
+      "category": "neurological",
+      "subcategory": "functional",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_2",
+          "line_no": 115,
+          "span": "delirium symptoms"
+        }
+      ]
+    },
+    {
+      "condition_name": "Dysphagia",
+      "category": "gastrointestinal",
+      "subcategory": "functional_gi",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_2",
+          "line_no": 118,
+          "span": "severe dysphagia"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 149,
+          "span": "severe dysphagia"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 369,
+          "span": "dysphagia"
+        }
+      ]
+    },
+    {
+      "condition_name": "Paravasate",
+      "category": "cardiovascular",
+      "subcategory": "vascular",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_3",
+          "line_no": 151,
+          "span": "paravasate in the right upper extremity"
+        }
+      ]
+    },
+    {
+      "condition_name": "Painful erythema",
+      "category": "cardiovascular",
+      "subcategory": "inflammatory_vascular",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_3",
+          "line_no": 152,
+          "span": "painful erythema"
+        }
+      ]
+    },
+    {
+      "condition_name": "Post-COVID myocarditis",
+      "category": "cardiovascular",
+      "subcategory": "inflammatory_vascular",
+      "status": "suspected",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_3",
+          "line_no": 399,
+          "span": "post-COVID myocarditis"
+        }
+      ]
+    },
+    {
+      "condition_name": "Congenital cyst",
+      "category": "gastrointestinal",
+      "subcategory": "hepatic",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_3",
+          "line_no": 301,
+          "span": "congenital cyst"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 417,
+          "span": "congenital liver cyst"
+        }
+      ]
+    },
+    {
+      "condition_name": "Heart Failure",
+      "category": "cardiovascular",
+      "subcategory": "structural",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_3",
+          "line_no": 402,
+          "span": "heart failure"
+        }
+      ]
+    },
+    {
+      "condition_name": "Catheter-associated Infection",
+      "category": "infectious",
+      "subcategory": "bacterial",
+      "status": "resolved",
+      "onset": "10/20/21",
+      "evidence": [
+        {
+          "note_id": "text_3",
+          "line_no": 410,
+          "span": "catheter-associated"
+        }
+      ]
+    },
+    {
+      "condition_name": "CIP/CIM",
+      "category": "neurological",
+      "subcategory": "functional",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_3",
+          "line_no": 119,
+          "span": "CIP/CIM"
+        }
+      ]
+    },
+    {
+      "condition_name": "Depressed mood",
+      "category": "neurological",
+      "subcategory": "functional",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_3",
+          "line_no": 124,
+          "span": "Depressed mood"
+        }
+      ]
+    },
+    {
+      "condition_name": "Post-Intensive-Care Syndrome",
+      "category": "neurological",
+      "subcategory": "functional",
+      "status": "suspected",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_4",
+          "line_no": 6,
+          "span": "Post-Intensive-Care Syndrome"
+        }
+      ]
+    },
+    {
+      "condition_name": "ICU-acquired weakness",
+      "category": "musculoskeletal",
+      "subcategory": "connective_tissue_disorder",
+      "status": "suspected",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_4",
+          "line_no": 104,
+          "span": "ICU-acquired weakness"
+        }
+      ]
+    },
+    {
+      "condition_name": "SARS-CoV-2 infection",
+      "category": "infectious",
+      "subcategory": "viral",
+      "status": "resolved",
+      "onset": "09/30/2021",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 25,
+          "span": "confirmed SARS-CoV-2 infection"
+        }
+      ]
+    },
+    {
+      "condition_name": "Aspergillosis",
+      "category": "infectious",
+      "subcategory": "fungal",
+      "status": "resolved",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_3",
+          "line_no": 257,
+          "span": "Aspergillosis"
+        }
+      ]
+    },
+    {
+      "condition_name": "COVID pneumonia",
+      "category": "pulmonary",
+      "subcategory": "obstructive",
+      "status": "resolved",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_3",
+          "line_no": 244,
+          "span": "COVID pneumonia"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 366,
+          "span": "COVID pneumonia"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,582 @@
+{
+  "patient_id": "patient_14",
+  "conditions": [
+    {
+      "condition_name": "Myxoid Liposarcoma",
+      "category": "cancer",
+      "subcategory": "primary_malignancy",
+      "status": "active",
+      "onset": "2022",
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 30,
+          "span": "Mucinous liposarcoma"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 6,
+          "span": "Soft tissue tumor of the right proximal "
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 140,
+          "span": "myxoid liposarcoma, Grade 1"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 159,
+          "span": "myxoid liposarcoma"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 170,
+          "span": "Suspected liposarcoma"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 186,
+          "span": "myxoid liposarcoma"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 203,
+          "span": "myxoid liposarcoma of the right adductor"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 210,
+          "span": "Suspected liposarcoma of the right proximal"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 9,
+          "span": "Myxoid liposarcoma on the right medial t"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 129,
+          "span": "myxoid liposarcoma"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 164,
+          "span": "Liposarcoma of the thigh"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 7,
+          "span": "Myxoid liposarcoma, right medial thigh"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 7,
+          "span": "Myxoid liposarcoma on the right"
+        },
+        {
+          "note_id": "text_5",
+          "line_no": 7,
+          "span": "Myxoid liposarcoma, right medial thigh"
+        },
+        {
+          "note_id": "text_6",
+          "line_no": 7,
+          "span": "Myxoid liposarcoma, right medial thigh"
+        },
+        {
+          "note_id": "text_6",
+          "line_no": 106,
+          "span": "metastatic myxoid liposarcoma"
+        }
+      ]
+    },
+    {
+      "condition_name": "Arterial hypertension",
+      "category": "cardiovascular",
+      "subcategory": "hypertensive",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 10,
+          "span": "Arterial hypertension"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 16,
+          "span": "Arterial hypertension"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 18,
+          "span": "Arterial hypertension"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 18,
+          "span": "Arterial hypertension"
+        },
+        {
+          "note_id": "text_5",
+          "line_no": 18,
+          "span": "Arterial hypertension"
+        },
+        {
+          "note_id": "text_6",
+          "line_no": 22,
+          "span": "Arterial hypertension"
+        }
+      ]
+    },
+    {
+      "condition_name": "Non-insulin-dependent diabetes mellitus",
+      "category": "metabolic_endocrine",
+      "subcategory": "diabetes",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 12,
+          "span": "Non-insulin-dependent diabetes mellitus"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 18,
+          "span": "Non-insulin-dependent diabetes mellitus"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 20,
+          "span": "Non-insulin-dependent diabetes mellitus"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 20,
+          "span": "Non-insulin-dependent diabetes"
+        },
+        {
+          "note_id": "text_5",
+          "line_no": 20,
+          "span": "Non-insulin-dependent diabetes mellitus "
+        },
+        {
+          "note_id": "text_6",
+          "line_no": 24,
+          "span": "Non-insulin-dependent diabetes mellitus"
+        }
+      ]
+    },
+    {
+      "condition_name": "Coronary artery disease",
+      "category": "cardiovascular",
+      "subcategory": "coronary",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 14,
+          "span": "Coronary artery disease with stent place"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 20,
+          "span": "Coronary artery disease with stent place"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 22,
+          "span": "Coronary artery disease with stent place"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 22,
+          "span": "Coronary artery disease"
+        },
+        {
+          "note_id": "text_5",
+          "line_no": 22,
+          "span": "Coronary artery disease (CAD) with stent"
+        },
+        {
+          "note_id": "text_6",
+          "line_no": 26,
+          "span": "Coronary artery disease"
+        }
+      ]
+    },
+    {
+      "condition_name": "Nicotine abuse",
+      "category": "toxicological",
+      "subcategory": "environmental_exposure",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 16,
+          "span": "Nicotine abuse (80-100 pack-years)"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 22,
+          "span": "Nicotine abuse (80-100 pack-years)"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 24,
+          "span": "Nicotine abuse (80-100 pack-years)"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 24,
+          "span": "Nicotine abuse"
+        },
+        {
+          "note_id": "text_5",
+          "line_no": 24,
+          "span": "Nicotine abuse (80-100 pack-years)"
+        },
+        {
+          "note_id": "text_6",
+          "line_no": 28,
+          "span": "Nicotine abuse"
+        }
+      ]
+    },
+    {
+      "condition_name": "Apoplexy",
+      "category": "neurological",
+      "subcategory": "cerebrovascular",
+      "status": "resolved",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 20,
+          "span": "Status post apoplexy"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 26,
+          "span": "Status post apoplexy"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 28,
+          "span": "Status post apoplexy"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 28,
+          "span": "Status post apoplexy"
+        },
+        {
+          "note_id": "text_5",
+          "line_no": 28,
+          "span": "Status post apoplexy"
+        },
+        {
+          "note_id": "text_6",
+          "line_no": 32,
+          "span": "Status post apoplexy"
+        }
+      ]
+    },
+    {
+      "condition_name": "Cataract",
+      "category": "neurological",
+      "subcategory": "functional",
+      "status": "resolved",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 22,
+          "span": "Status post cataract surgery"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 28,
+          "span": "Status post cataract surgery"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 30,
+          "span": "Status post cataract surgery"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 30,
+          "span": "Status post cataract surgery"
+        },
+        {
+          "note_id": "text_5",
+          "line_no": 30,
+          "span": "Status post cataract surgery"
+        },
+        {
+          "note_id": "text_6",
+          "line_no": 34,
+          "span": "Status post cataract surgery"
+        }
+      ]
+    },
+    {
+      "condition_name": "Right hip replacement",
+      "category": "musculoskeletal",
+      "subcategory": "degenerative",
+      "status": "resolved",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 24,
+          "span": "Status post right hip total hip replacement"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 30,
+          "span": "Status post right hip total hip replacement"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 32,
+          "span": "Status post right hip total hip replacement"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 32,
+          "span": "Status post right hip total"
+        },
+        {
+          "note_id": "text_5",
+          "line_no": 32,
+          "span": "Status post right hip total hip replacement"
+        }
+      ]
+    },
+    {
+      "condition_name": "Polyposis coli",
+      "category": "gastrointestinal",
+      "subcategory": "lower_gi",
+      "status": "resolved",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 26,
+          "span": "Status post Polypectomy for polyposis coli"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 32,
+          "span": "Status post Polypectomy for polyposis coli"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 34,
+          "span": "Status post Polypectomy for polyposis co"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 34,
+          "span": "Status post Polypectomy for polyposis"
+        },
+        {
+          "note_id": "text_5",
+          "line_no": 34,
+          "span": "Status post Polypectomy for polyposis co"
+        },
+        {
+          "note_id": "text_6",
+          "line_no": 38,
+          "span": "Status post Polypectomy for polyposis co"
+        }
+      ]
+    },
+    {
+      "condition_name": "Appendicitis",
+      "category": "gastrointestinal",
+      "subcategory": "lower_gi",
+      "status": "resolved",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 28,
+          "span": "Status post appendectomy"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 34,
+          "span": "Status post appendectomy"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 36,
+          "span": "Status post appendectomy"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 36,
+          "span": "Status post appendectomy"
+        },
+        {
+          "note_id": "text_5",
+          "line_no": 36,
+          "span": "Status post appendectomy"
+        },
+        {
+          "note_id": "text_6",
+          "line_no": 40,
+          "span": "Status post appendectomy"
+        }
+      ]
+    },
+    {
+      "condition_name": "Meniere's disease",
+      "category": "neurological",
+      "subcategory": "functional",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 30,
+          "span": "M. Meniere"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 36,
+          "span": "M. Meniere"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 38,
+          "span": "M. Meniere"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 38,
+          "span": "M. Meniere"
+        },
+        {
+          "note_id": "text_5",
+          "line_no": 38,
+          "span": "M. Meniere"
+        },
+        {
+          "note_id": "text_6",
+          "line_no": 42,
+          "span": "M. Meniere"
+        }
+      ]
+    },
+    {
+      "condition_name": "Pleural Effusion",
+      "category": "pulmonary",
+      "subcategory": "structural",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_2",
+          "line_no": 178,
+          "span": "minimal right-sided pleural effusion"
+        }
+      ]
+    },
+    {
+      "condition_name": "Coronary Artery Sclerosis",
+      "category": "cardiovascular",
+      "subcategory": "coronary",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_2",
+          "line_no": 183,
+          "span": "coronary artery sclerosis"
+        }
+      ]
+    },
+    {
+      "condition_name": "Atherosclerosis of Abdominal Aorta",
+      "category": "cardiovascular",
+      "subcategory": "vascular",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_2",
+          "line_no": 198,
+          "span": "advanced atherosclerosis of the abdominal aorta"
+        }
+      ]
+    },
+    {
+      "condition_name": "Stenosis of Left External Iliac Artery",
+      "category": "cardiovascular",
+      "subcategory": "vascular",
+      "status": "resolved",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_2",
+          "line_no": 199,
+          "span": "history of stenting of the left external iliac artery"
+        }
+      ]
+    },
+    {
+      "condition_name": "Renal Cysts",
+      "category": "renal",
+      "subcategory": "structural",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_2",
+          "line_no": 196,
+          "span": "few renal cysts"
+        }
+      ]
+    },
+    {
+      "condition_name": "Degenerative changes",
+      "category": "musculoskeletal",
+      "subcategory": "degenerative",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 17,
+          "span": "degenerative changes"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 202,
+          "span": "Degenerative changes in the spine"
+        }
+      ]
+    },
+    {
+      "condition_name": "Wound Healing Disorder",
+      "category": "gastrointestinal",
+      "subcategory": "functional_gi",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_2",
+          "line_no": 137,
+          "span": "wound healing disorder"
+        }
+      ]
+    }
+  ]
+}

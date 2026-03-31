@@ -79,7 +79,7 @@ def process_patient(data_dir, patient_id, output_dir, verbose=False):
             json.dumps(output, indent=2, ensure_ascii=False),
             encoding="utf-8"
         )
-        logger.info(f"[{patient_id}] ✓  {len(validated)} conditions → {out_path}")
+        logger.info(f"[{patient_id}]  {len(validated)} conditions → {out_path}")
 
     except Exception as e:
         stats["error"] = str(e)

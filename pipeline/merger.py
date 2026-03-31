@@ -1,7 +1,9 @@
 import os
 import json
-from openai import OpenAI
-from tenacity import retry, stop_after_attempt, wait_exponential
+import time
+import re
+from openai import OpenAI, RateLimitError
+
 
 def get_client():
     return OpenAI(
@@ -27,7 +29,7 @@ TASKS:
 4. ONSET — earliest explicit date
 5. EVIDENCE — all mentions from all notes
 
-TAXONOMY:
+TAXONOMY (use EXACTLY these keys):
 cancer: primary_malignancy, metastasis, pre_malignant, benign, cancer_of_unknown_primary
 cardiovascular: coronary, hypertensive, rhythm, vascular, structural, inflammatory_vascular
 infectious: bacterial, viral, fungal, parasitic, spirochetal
@@ -42,28 +44,68 @@ musculoskeletal: fracture, degenerative, crystal_arthropathy, connective_tissue_
 toxicological: poisoning, environmental_exposure
 dental_oral: dental, temporomandibular
 
-RULES:
-- Heart failure → classify by cause (CAD→coronary, HTN→hypertensive, unknown→structural)
-- Diabetic complications → metabolic_endocrine.diabetes (NOT renal/neuro)
-- ANY low blood count → hematological.cytopenia regardless of cause
+CRITICAL SUBCATEGORY RULES:
+- pulmonary.structural → pneumothorax, pleural effusion, interstitial lung disease, pulmonary fibrosis
+- pulmonary.acute_respiratory → ARDS, acute respiratory FAILURE only (NOT pneumothorax)
+- neurological.traumatic → traumatic brain injury, skull fractures, spinal cord injury
+- neurological.cerebrovascular → stroke, subarachnoid hemorrhage, TIA, intracranial hemorrhage
+- cardiovascular.vascular → arterial dissection, aneurysm, DVT, peripheral vascular disease
+- cardiovascular.inflammatory_vascular → vasculitis, arteritis ONLY
+- musculoskeletal.fracture → bone fractures only (NOT cancer bone destruction → cancer.metastasis)
+- hematological.cytopenia → ALL low blood counts regardless of cause
+
+DISAMBIGUATION RULES:
+- Heart failure → classify by CAUSE (CAD→coronary, HTN→hypertensive, unknown→structural)
+- Diabetic complications → ALWAYS metabolic_endocrine.diabetes (NOT renal/neuro)
+- ANY low blood count → ALWAYS hematological.cytopenia
 - Metastases → ONE entry PER site (brain≠liver≠bone≠lung)
 - Esophageal varices → gastrointestinal.upper_gi
 - Drug allergies → immunological.allergic
-- Procedures (surgery, transplant) → SKIP, not conditions
-- status active: in Diagnoses section, currently treated
-- status resolved: "history of", "status post", only in Medical History
-- status suspected: "suspected", "possible", "rule out"
-- onset: use stated date first, else note encounter date, else null
+- Procedures (surgery, transplant, biopsy) → SKIP, not conditions
+- Nicotine/alcohol abuse → toxicological.environmental_exposure (NOT poisoning)
+- Radiodermatitis → toxicological.environmental_exposure (NOT poisoning)
+
+STATUS RULES (use LATEST note):
+- active: in Diagnoses/Other Diagnoses section, currently treated, chronic, ongoing
+- resolved: "history of", "status post", only in Medical History, "in remission"
+- suspected: "suspected", "possible", "rule out", "likely", "suggestive of"
+
+ONSET DATE RULES:
+- Priority 1: explicitly stated date ("diagnosed 05/2014" → "May 2014")
+- Priority 2: encounter date of earliest note where condition appears
+- Priority 3: convert relative ("since mid-December" in Jan 2017 → "December 2016")
+- Priority 4: null (truly unknown)
+- Symptom date ≠ diagnosis onset
 
 Note encounter dates: {note_dates_json}
 
 Per-note extractions: {extractions_json}
-"""
+
+OUTPUT — return ONLY this JSON array:
+[
+  {{
+    "condition_name": "Left midline tongue carcinoma",
+    "category": "cancer",
+    "subcategory": "primary_malignancy",
+    "status": "active",
+    "onset": "May 2014",
+    "evidence": [
+      {{"note_id": "text_0", "line_no": 13, "span": "Left midline tongue carcinoma pT1"}}
+    ]
+  }}
+]"""
+
+
+def parse_retry_seconds(error_message: str) -> float:
+
+    match = re.search(r'try again in (\d+(?:\.\d+)?)', str(error_message))
+    if match:
+        return float(match.group(1)) + 2
+    return 60.0
+
 
 def clean_json_response(raw: str) -> str:
-    """Cleans LLM output to extract valid JSON."""
     raw = raw.strip()
-
     if raw.startswith("```"):
         lines = raw.split("\n")
         lines = lines[1:]
@@ -104,7 +146,6 @@ def clean_json_response(raw: str) -> str:
         return ''.join(result)
 
     raw = fix_newlines_in_strings(raw)
-
     raw = raw.strip()
     if not raw.endswith("]"):
         last_complete = raw.rfind("},")
@@ -112,16 +153,10 @@ def clean_json_response(raw: str) -> str:
             last_complete = raw.rfind("}")
         if last_complete != -1:
             raw = raw[:last_complete + 1] + "\n]"
-
     return raw.strip()
 
 
 def compress_extractions(all_extractions: dict) -> dict:
-    """
-    Compresses raw extractions to reduce token count.
-    WHY: Groq has a 12,000 token/minute limit.
-    Keeping only essential fields reduces prompt size significantly.
-    """
     compressed = {}
     for note_id, conditions in all_extractions.items():
         compressed[note_id] = [
@@ -138,11 +173,65 @@ def compress_extractions(all_extractions: dict) -> dict:
     return compressed
 
 
+def call_merger_with_smart_retry(prompt: str, max_attempts: int = 5) -> str:
+
+    for attempt in range(max_attempts):
+        try:
+            response = get_client().chat.completions.create(
+                model=get_model(),
+                messages=[
+                    {"role": "system", "content": MERGER_SYSTEM_PROMPT},
+                    {"role": "user",   "content": prompt}
+                ],
+                temperature=0.0,
+                max_tokens=4000
+            )
+            return response.choices[0].message.content
+
+        except RateLimitError as e:
+            wait_secs = parse_retry_seconds(str(e))
+            if attempt < max_attempts - 1:
+                print(f"\n  Rate limit hit in merger, waiting {wait_secs:.0f}s...")
+                time.sleep(wait_secs)
+            else:
+                raise
+        except Exception as e:
+            if attempt < max_attempts - 1:
+                time.sleep(30)
+            else:
+                raise
+
+
+def _merge_batch(extractions: dict, note_dates: dict) -> list:
+
+    extractions_json = json.dumps(extractions, indent=1)
+    note_dates_json  = json.dumps(note_dates)
+
+    prompt = MERGER_USER_PROMPT.format(
+        extractions_json=extractions_json,
+        note_dates_json=note_dates_json
+    )
+
+    approx_tokens = len(prompt) // 4
+    print(f"  Batch prompt ~{approx_tokens} tokens")
+
+    raw = call_merger_with_smart_retry(prompt)
+    cleaned = clean_json_response(raw)
+
+    try:
+        conditions = json.loads(cleaned)
+        if not isinstance(conditions, list):
+            return []
+        return conditions
+    except json.JSONDecodeError as e:
+        raise ValueError(
+            f"Merger JSON parse error: {e}\n"
+            f"Raw (first 500 chars): {raw[:500]}"
+        )
+
+
 def merge_and_classify(all_extractions: dict, note_dates: dict) -> list:
-    """
-    Merges per-note extractions into a final unified condition list.
-    Splits into batches if too many conditions to fit in one prompt.
-    """
+    
     compressed = compress_extractions(all_extractions)
 
     total = sum(len(v) for v in compressed.values())
@@ -157,59 +246,19 @@ def merge_and_classify(all_extractions: dict, note_dates: dict) -> list:
 
     batch1 = {k: compressed[k] for k in note_ids[:mid]}
     batch2 = {k: compressed[k] for k in note_ids[mid:]}
-
-    # Dates for each batch
     dates1 = {k: note_dates[k] for k in note_ids[:mid] if k in note_dates}
     dates2 = {k: note_dates[k] for k in note_ids[mid:] if k in note_dates}
 
     print(f"  Batch 1: notes {note_ids[:mid]}")
     results1 = _merge_batch(batch1, dates1)
 
+    time.sleep(10)
+
     print(f"  Batch 2: notes {note_ids[mid:]}")
     results2 = _merge_batch(batch2, dates2)
+
+    time.sleep(10)
 
     print(f"  Final merge: combining {len(results1)} + {len(results2)} conditions...")
     combined = {"batch1": results1, "batch2": results2}
     return _merge_batch(combined, note_dates)
-
-
-@retry(
-    stop=stop_after_attempt(5),
-    wait=wait_exponential(multiplier=2, min=15, max=120)
-)
-def _merge_batch(extractions: dict, note_dates: dict) -> list:
-    """Single merger API call for one batch."""
-    extractions_json = json.dumps(extractions, indent=1)
-    note_dates_json  = json.dumps(note_dates)
-
-    prompt = MERGER_USER_PROMPT.format(
-        extractions_json=extractions_json,
-        note_dates_json=note_dates_json
-    )
-
-    approx_tokens = len(prompt) // 4
-    print(f"  Batch prompt ~{approx_tokens} tokens")
-
-    response = get_client().chat.completions.create(
-        model=get_model(),
-        messages=[
-            {"role": "system", "content": MERGER_SYSTEM_PROMPT},
-            {"role": "user",   "content": prompt}
-        ],
-        temperature=0.0,
-        max_tokens=4000
-    )
-
-    raw = response.choices[0].message.content
-    cleaned = clean_json_response(raw)
-
-    try:
-        conditions = json.loads(cleaned)
-        if not isinstance(conditions, list):
-            return []
-        return conditions
-    except json.JSONDecodeError as e:
-        raise ValueError(
-            f"Merger JSON parse error: {e}\n"
-            f"Raw (first 500 chars): {raw[:500]}"
-        )

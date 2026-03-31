@@ -1,8 +1,8 @@
 import os
 import json
 import time
-from openai import OpenAI
-from tenacity import retry, stop_after_attempt, wait_exponential
+import re
+from openai import OpenAI, RateLimitError
 
 def get_client():
     return OpenAI(
@@ -24,25 +24,23 @@ INCLUDE:
 - Past conditions ("history of", "status post")
 - Specific named findings (named metastases, named fractures, named varices)
 
-EXCLUDE — be strict about these:
+EXCLUDE — be strict:
 - Symptoms alone: pain, fatigue, nausea, fever, swelling, bleeding
-- Lab values: hemoglobin levels, creatinine values, CRP values
-- Negative findings: "no evidence of", "no signs of", "unremarkable", "within normal"
+- Lab values and lab markers alone (e.g. "elevated LDH", "hemoglobin 8.2")
+- Negative findings: "no evidence of", "no signs of", "unremarkable"
 - Vague words: "tumor", "lesion", "mass" without a specific diagnosis name
 - Medications and dosages
 - Procedures: surgery, biopsy, gastroscopy, kyphoplasty, resection
 - Normal examination findings
-- Elevated/reduced lab markers alone (e.g. "elevated LDH", "reduced hemoglobin")
 
-A clinical note with 1-2 pages should have at most 10-15 conditions.
-Be conservative — only extract named, confirmed or suspected diagnoses.
+Be conservative — a 1-2 page note should have at most 10-15 conditions.
 
 For each condition return:
 - condition_name: specific diagnosis name, max 80 chars
-- section: which section it is in (e.g. "Diagnoses", "Medical History", "CT Findings")
+- section: which section (e.g. "Diagnoses", "Medical History", "CT Findings")
 - status_hint: signal words, max 40 chars (e.g. "in Diagnoses section", "history of")
-- onset_hint: date only, max 20 chars (e.g. "05/2014", "2018", "unknown")
-- line_no: integer line number from the note
+- onset_hint: date only, max 20 chars (e.g. "05/2014", "unknown")
+- line_no: integer line number
 - span: short identifying phrase, max 60 chars
 
 Return ONLY a JSON array [ ... ]. Nothing else.
@@ -50,9 +48,9 @@ Return ONLY a JSON array [ ... ]. Nothing else.
 NOTE EXCERPT:
 {chunk_text}"""
 
+
 def clean_json_response(raw: str) -> str:
     raw = raw.strip()
-
     if raw.startswith("```"):
         lines = raw.split("\n")
         lines = lines[1:]
@@ -93,7 +91,6 @@ def clean_json_response(raw: str) -> str:
         return ''.join(result)
 
     raw = fix_newlines_in_strings(raw)
-
     raw = raw.strip()
     if not raw.endswith("]"):
         last_complete = raw.rfind("},")
@@ -101,13 +98,47 @@ def clean_json_response(raw: str) -> str:
             last_complete = raw.rfind("}")
         if last_complete != -1:
             raw = raw[:last_complete + 1] + "\n]"
-
     return raw.strip()
 
 
+def parse_retry_seconds(error_message: str) -> float:
+    
+    match = re.search(r'try again in (\d+(?:\.\d+)?)', str(error_message))
+    if match:
+        return float(match.group(1)) + 2  # add 2s buffer
+    return 60.0  # default wait 60s if we can't parse
+
+
+def call_with_smart_retry(prompt: str, note_id: str, max_attempts: int = 5) -> str:
+    
+    for attempt in range(max_attempts):
+        try:
+            response = get_client().chat.completions.create(
+                model=get_model(),
+                messages=[
+                    {"role": "system", "content": EXTRACTION_SYSTEM_PROMPT},
+                    {"role": "user",   "content": prompt}
+                ],
+                temperature=0.0,
+                max_tokens=800
+            )
+            return response.choices[0].message.content
+
+        except RateLimitError as e:
+            wait_secs = parse_retry_seconds(str(e))
+            if attempt < max_attempts - 1:
+                print(f"\n  Rate limit hit for {note_id}, waiting {wait_secs:.0f}s...")
+                time.sleep(wait_secs)
+            else:
+                raise
+        except Exception as e:
+            if attempt < max_attempts - 1:
+                time.sleep(30)
+            else:
+                raise
+
 
 def split_into_chunks(numbered_text: str, chunk_size: int = 100) -> list:
-    
     lines = numbered_text.split("\n")
     chunks = []
     for i in range(0, len(lines), chunk_size):
@@ -116,29 +147,13 @@ def split_into_chunks(numbered_text: str, chunk_size: int = 100) -> list:
     return chunks
 
 
-@retry(
-    stop=stop_after_attempt(5),
-    wait=wait_exponential(multiplier=2, min=15, max=120)
-)
 def extract_from_chunk(chunk_text: str, note_id: str) -> list:
-
     non_empty = [l for l in chunk_text.split("\n") if l.strip()]
     if len(non_empty) < 3:
         return []
 
     prompt = EXTRACTION_USER_PROMPT.format(chunk_text=chunk_text)
-
-    response = get_client().chat.completions.create(
-        model=get_model(),
-        messages=[
-            {"role": "system", "content": EXTRACTION_SYSTEM_PROMPT},
-            {"role": "user",   "content": prompt}
-        ],
-        temperature=0.0,
-        max_tokens=800
-    )
-
-    raw = response.choices[0].message.content
+    raw = call_with_smart_retry(prompt, note_id)
     cleaned = clean_json_response(raw)
 
     try:
@@ -147,14 +162,15 @@ def extract_from_chunk(chunk_text: str, note_id: str) -> list:
             return []
         return conditions
     except json.JSONDecodeError as e:
-        raise ValueError(
-            f"Chunk parse failed for {note_id}: {e}\n"
-            f"Raw: {raw[:300]}"
-        )
+        print(f"  Warning: JSON parse failed for chunk of {note_id}, skipping")
+        return []
 
 
 def extract_from_note(note: dict) -> list:
-    
+    """
+    Extracts all conditions from a note by processing 100-line chunks.
+    Combines results and deduplicates by line number.
+    """
     chunks = split_into_chunks(note["numbered_text"], chunk_size=100)
     all_conditions = []
 

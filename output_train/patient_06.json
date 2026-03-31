@@ -1,0 +1,563 @@
+{
+  "patient_id": "patient_06",
+  "conditions": [
+    {
+      "condition_name": "Tongue Carcinoma",
+      "category": "cancer",
+      "subcategory": "primary_malignancy",
+      "status": "active",
+      "onset": "May 2014",
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 13,
+          "span": "left midline tongue carcinoma"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 6,
+          "span": "Tongue base Carcinoma ICD-10: C01"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 8,
+          "span": "Tongue base carcinoma ICD-10: C01"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 8,
+          "span": "Tongue base Carcinoma ICD-10: C01"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 8,
+          "span": "Tongue base carcinoma ICD-10: C01"
+        },
+        {
+          "note_id": "text_5",
+          "line_no": 10,
+          "span": "Tongue base Carcinoma ICD-10: C01"
+        },
+        {
+          "note_id": "text_6",
+          "line_no": 34,
+          "span": "left tongue base carcinoma"
+        },
+        {
+          "note_id": "text_7",
+          "line_no": 27,
+          "span": "tongue base carcinoma"
+        }
+      ]
+    },
+    {
+      "condition_name": "Arterial Hypertension",
+      "category": "cardiovascular",
+      "subcategory": "hypertensive",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 15,
+          "span": "Arterial hypertension"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 11,
+          "span": "Arterial hypertension"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 20,
+          "span": "Arterial hypertension"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 20,
+          "span": "Arterial hypertension"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 20,
+          "span": "Arterial hypertension"
+        },
+        {
+          "note_id": "text_5",
+          "line_no": 22,
+          "span": "Arterial hypertension"
+        },
+        {
+          "note_id": "text_6",
+          "line_no": 48,
+          "span": "Arterial hypertension"
+        },
+        {
+          "note_id": "text_7",
+          "line_no": 42,
+          "span": "Arterial hypertension"
+        }
+      ]
+    },
+    {
+      "condition_name": "Liver Cirrhosis",
+      "category": "gastrointestinal",
+      "subcategory": "hepatic",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 63,
+          "span": "Liver cirrhosis"
+        },
+        {
+          "note_id": "text_6",
+          "line_no": 44,
+          "span": "Liver cirrhosis with alcohol abuse"
+        },
+        {
+          "note_id": "text_7",
+          "line_no": 38,
+          "span": "Liver cirrhosis with alcohol abuse"
+        }
+      ]
+    },
+    {
+      "condition_name": "Idiopathic Thrombocytopenia",
+      "category": "hematological",
+      "subcategory": "cytopenia",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 21,
+          "span": "Idiopathic thrombocytopenia"
+        }
+      ]
+    },
+    {
+      "condition_name": "Diabetes Mellitus Type II",
+      "category": "metabolic_endocrine",
+      "subcategory": "diabetes",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 23,
+          "span": "Non-insulin-dependent diabetes mellitus"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 13,
+          "span": "Diabetes mellitus type II"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 22,
+          "span": "Diabetes mellitus type II"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 22,
+          "span": "Diabetes mellitus type II"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 22,
+          "span": "Diabetes mellitus type II"
+        },
+        {
+          "note_id": "text_5",
+          "line_no": 24,
+          "span": "Diabetes mellitus type II"
+        },
+        {
+          "note_id": "text_6",
+          "line_no": 46,
+          "span": "Non-insulin-dependent diabetes mellitus"
+        },
+        {
+          "note_id": "text_7",
+          "line_no": 40,
+          "span": "Non-insulin-dependent diabetes mellitus"
+        }
+      ]
+    },
+    {
+      "condition_name": "Hypothyroidism",
+      "category": "metabolic_endocrine",
+      "subcategory": "thyroid",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 25,
+          "span": "Hypothyroidism"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 19,
+          "span": "Hypothyroidism"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 28,
+          "span": "Hypothyroidism"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 28,
+          "span": "Hypothyroidism"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 28,
+          "span": "Hypothyroidism"
+        },
+        {
+          "note_id": "text_5",
+          "line_no": 30,
+          "span": "Hypothyroidism"
+        },
+        {
+          "note_id": "text_6",
+          "line_no": 52,
+          "span": "Hypothyroidism"
+        },
+        {
+          "note_id": "text_7",
+          "line_no": 46,
+          "span": "Hypothyroidism"
+        }
+      ]
+    },
+    {
+      "condition_name": "Nicotine Abuse",
+      "category": "toxicological",
+      "subcategory": "environmental_exposure",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 27,
+          "span": "Nicotine abuse"
+        }
+      ]
+    },
+    {
+      "condition_name": "Lymph Node Metastases",
+      "category": "cancer",
+      "subcategory": "metastasis",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 71,
+          "span": "suspected lymph node metastases"
+        }
+      ]
+    },
+    {
+      "condition_name": "Squamous Cell Carcinoma",
+      "category": "cancer",
+      "subcategory": "primary_malignancy",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 200,
+          "span": "presence of squamous cell carcinoma"
+        },
+        {
+          "note_id": "text_0",
+          "line_no": 215,
+          "span": "Invasive squamous cell carcinoma"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 36,
+          "span": "Invasive, moderately differentiated, squ"
+        }
+      ]
+    },
+    {
+      "condition_name": "Lymphofollicular Hyperplasia",
+      "category": "immunological",
+      "subcategory": "autoimmune",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 103,
+          "span": "lymphofollicular hyperplasia"
+        }
+      ]
+    },
+    {
+      "condition_name": "Oral Thrush",
+      "category": "infectious",
+      "subcategory": "fungal",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 21,
+          "span": "Oral thrush"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 30,
+          "span": "Oral thrush"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 30,
+          "span": "Oral thrush"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 30,
+          "span": "Oral thrush"
+        },
+        {
+          "note_id": "text_5",
+          "line_no": 32,
+          "span": "Oral thrush"
+        },
+        {
+          "note_id": "text_6",
+          "line_no": 54,
+          "span": "Oral thrush"
+        },
+        {
+          "note_id": "text_7",
+          "line_no": 48,
+          "span": "Oral thrush"
+        }
+      ]
+    },
+    {
+      "condition_name": "Hypacusis",
+      "category": "neurological",
+      "subcategory": "functional",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 23,
+          "span": "Hypacusis"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 32,
+          "span": "Hypacusis"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 32,
+          "span": "Hypacusis"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 32,
+          "span": "Hypacusis"
+        },
+        {
+          "note_id": "text_5",
+          "line_no": 34,
+          "span": "Hypacusis"
+        },
+        {
+          "note_id": "text_6",
+          "line_no": 56,
+          "span": "Hypacusis"
+        },
+        {
+          "note_id": "text_7",
+          "line_no": 50,
+          "span": "Hypacusis"
+        }
+      ]
+    },
+    {
+      "condition_name": "Oropharyngeal Cancer",
+      "category": "cancer",
+      "subcategory": "primary_malignancy",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_3",
+          "line_no": 55,
+          "span": "extensive recurrence of oropharyngeal ca"
+        }
+      ]
+    },
+    {
+      "condition_name": "Metachronous pulmonary metastatic squamous cell carcinoma",
+      "category": "cancer",
+      "subcategory": "metastasis",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_5",
+          "line_no": 6,
+          "span": "Metachronous pulmonary metastatic"
+        },
+        {
+          "note_id": "text_6",
+          "line_no": 6,
+          "span": "Metachronous pulmonary metastatic squamo"
+        },
+        {
+          "note_id": "text_7",
+          "line_no": 6,
+          "span": "Metachronous pulmonary metastatic squamo"
+        }
+      ]
+    },
+    {
+      "condition_name": "Recurrent oropharyngeal carcinoma",
+      "category": "cancer",
+      "subcategory": "primary_malignancy",
+      "status": "resolved",
+      "onset": "April 2014",
+      "evidence": [
+        {
+          "note_id": "text_5",
+          "line_no": 25,
+          "span": "Recurrent oropharyngeal carcinoma ICD-10"
+        },
+        {
+          "note_id": "text_6",
+          "line_no": 25,
+          "span": "Recurrent oropharyngeal carcinoma ICD-10"
+        },
+        {
+          "note_id": "text_7",
+          "line_no": 19,
+          "span": "Recurrent oropharyngeal carcinoma"
+        }
+      ]
+    },
+    {
+      "condition_name": "Hypopharyngeal carcinoma",
+      "category": "cancer",
+      "subcategory": "primary_malignancy",
+      "status": "resolved",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_5",
+          "line_no": 72,
+          "span": "metastatic recurrence of the previously "
+        },
+        {
+          "note_id": "text_6",
+          "line_no": 60,
+          "span": "previously diagnosed pulmonary metastati"
+        }
+      ]
+    },
+    {
+      "condition_name": "Pneumothorax",
+      "category": "pulmonary",
+      "subcategory": "structural",
+      "status": "active",
+      "onset": "January 21, 2022",
+      "evidence": [
+        {
+          "note_id": "text_5",
+          "line_no": 110,
+          "span": "left apical pneumothorax line"
+        }
+      ]
+    },
+    {
+      "condition_name": "Infiltrate",
+      "category": "pulmonary",
+      "subcategory": "obstructive",
+      "status": "suspected",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_5",
+          "line_no": 111,
+          "span": "infiltrate cannot be definitively ruled "
+        }
+      ]
+    },
+    {
+      "condition_name": "Atelectasis",
+      "category": "pulmonary",
+      "subcategory": "obstructive",
+      "status": "suspected",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_5",
+          "line_no": 107,
+          "span": "Atelectasis?"
+        }
+      ]
+    },
+    {
+      "condition_name": "Cardiomegaly",
+      "category": "cardiovascular",
+      "subcategory": "structural",
+      "status": "active",
+      "onset": "January 23, 2022",
+      "evidence": [
+        {
+          "note_id": "text_5",
+          "line_no": 134,
+          "span": "Cardiomegaly"
+        }
+      ]
+    },
+    {
+      "condition_name": "Urinary Tract Infection",
+      "category": "infectious",
+      "subcategory": "bacterial",
+      "status": "suspected",
+      "onset": "January 11, 2022",
+      "evidence": [
+        {
+          "note_id": "text_5",
+          "line_no": 166,
+          "span": "A low colony count typically does not su"
+        }
+      ]
+    },
+    {
+      "condition_name": "OSAS",
+      "category": "pulmonary",
+      "subcategory": "obstructive",
+      "status": "active",
+      "onset": null,
+      "evidence": [
+        {
+          "note_id": "text_6",
+          "line_no": 40,
+          "span": "OSAS with CPAP incompliance"
+        },
+        {
+          "note_id": "text_7",
+          "line_no": 36,
+          "span": "OSAS with CPAP incompliance"
+        }
+      ]
+    }
+  ]
+}
