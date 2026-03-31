@@ -1,0 +1,394 @@
+{
+  "patient_id": "patient_15",
+  "conditions": [
+    {
+      "condition_name": "Galactosemia",
+      "category": "metabolic_endocrine",
+      "subcategory": "genetic_metabolic",
+      "status": "active",
+      "onset": "July 1979",
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 10,
+          "span": "Classic Galactosemia"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 8,
+          "span": "Galactosemia"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 8,
+          "span": "Galactosemia"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 10,
+          "span": "Galactosemia"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 9,
+          "span": "Galactosemia"
+        },
+        {
+          "note_id": "text_5",
+          "line_no": 9,
+          "span": "Galactosemia"
+        }
+      ]
+    },
+    {
+      "condition_name": "Osteopenia",
+      "category": "metabolic_endocrine",
+      "subcategory": "nutritional_deficiency",
+      "status": "active",
+      "onset": "2013",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 10,
+          "span": "Osteopenia"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 10,
+          "span": "Osteopenia"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 12,
+          "span": "Osteopenia"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 11,
+          "span": "Osteopenia"
+        },
+        {
+          "note_id": "text_5",
+          "line_no": 11,
+          "span": "Osteopenia"
+        },
+        {
+          "note_id": "text_5",
+          "line_no": 142,
+          "span": "known osteopenia"
+        }
+      ]
+    },
+    {
+      "condition_name": "Vitamin D deficiency",
+      "category": "metabolic_endocrine",
+      "subcategory": "nutritional_deficiency",
+      "status": "active",
+      "onset": "unknown",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 22,
+          "span": "Vitamin D deficiency"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 22,
+          "span": "Vitamin D deficiency"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 24,
+          "span": "Vitamin D deficiency"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 23,
+          "span": "Vitamin D deficiency"
+        },
+        {
+          "note_id": "text_5",
+          "line_no": 23,
+          "span": "Vitamin D deficiency"
+        }
+      ]
+    },
+    {
+      "condition_name": "Appendectomy",
+      "category": "gastrointestinal",
+      "subcategory": "lower_gi",
+      "status": "resolved",
+      "onset": "unknown",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 24,
+          "span": "status post appendectomy"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 24,
+          "span": "status post appendectomy"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 26,
+          "span": "appendectomy"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 25,
+          "span": "status post appendectomy"
+        },
+        {
+          "note_id": "text_5",
+          "line_no": 25,
+          "span": "status post appendectomy"
+        }
+      ]
+    },
+    {
+      "condition_name": "Elbow fracture",
+      "category": "musculoskeletal",
+      "subcategory": "fracture",
+      "status": "resolved",
+      "onset": "unknown",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 26,
+          "span": "status post elbow fracture"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 26,
+          "span": "status post elbow fracture"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 28,
+          "span": "elbow fracture left arm"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 27,
+          "span": "status post elbow fracture"
+        },
+        {
+          "note_id": "text_5",
+          "line_no": 27,
+          "span": "status post elbow fracture"
+        }
+      ]
+    },
+    {
+      "condition_name": "Hyperbilirubinemia",
+      "category": "gastrointestinal",
+      "subcategory": "hepatic",
+      "status": "resolved",
+      "onset": "July 1979",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 37,
+          "span": "hyperbilirubinemia"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 36,
+          "span": "hyperbilirubinemia"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 37,
+          "span": "hyperbilirubinemia"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 37,
+          "span": "hyperbilirubinemia"
+        },
+        {
+          "note_id": "text_5",
+          "line_no": 36,
+          "span": "hyperbilirubinemia"
+        }
+      ]
+    },
+    {
+      "condition_name": "Hepatopathy",
+      "category": "gastrointestinal",
+      "subcategory": "hepatic",
+      "status": "resolved",
+      "onset": "unknown",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 38,
+          "span": "hepatopathy"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 38,
+          "span": "hepatopathy"
+        }
+      ]
+    },
+    {
+      "condition_name": "Myopic astigmatism",
+      "category": "neurological",
+      "subcategory": "functional",
+      "status": "resolved",
+      "onset": "unknown",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 55,
+          "span": "mild myopic astigmatism"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 57,
+          "span": "myopic astigmatism"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 56,
+          "span": "mild myopic astigmatism"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 54,
+          "span": "mild myopic astigmatism"
+        },
+        {
+          "note_id": "text_5",
+          "line_no": 55,
+          "span": "mild myopic astigmatism"
+        }
+      ]
+    },
+    {
+      "condition_name": "Amnion infection syndrome",
+      "category": "infectious",
+      "subcategory": "bacterial",
+      "status": "resolved",
+      "onset": "July 1979",
+      "evidence": [
+        {
+          "note_id": "text_4",
+          "line_no": 36,
+          "span": "amnion infection syndrome"
+        }
+      ]
+    },
+    {
+      "condition_name": "Gallbladder stones",
+      "category": "gastrointestinal",
+      "subcategory": "biliary",
+      "status": "active",
+      "onset": "unknown",
+      "evidence": [
+        {
+          "note_id": "text_5",
+          "line_no": 190,
+          "span": "Gallbladder stones persist"
+        },
+        {
+          "note_id": "text_5",
+          "line_no": 216,
+          "span": "gallbladder stones"
+        }
+      ]
+    },
+    {
+      "condition_name": "Liver Enlargement",
+      "category": "gastrointestinal",
+      "subcategory": "hepatic",
+      "status": "active",
+      "onset": "unknown",
+      "evidence": [
+        {
+          "note_id": "text_5",
+          "line_no": 201,
+          "span": "liver enlargement"
+        }
+      ]
+    },
+    {
+      "condition_name": "Latent hypothyroidism",
+      "category": "metabolic_endocrine",
+      "subcategory": "thyroid",
+      "status": "active",
+      "onset": "unknown",
+      "evidence": [
+        {
+          "note_id": "text_3",
+          "line_no": 70,
+          "span": "latent hypothyroidism"
+        }
+      ]
+    },
+    {
+      "condition_name": "Bronchopneumonia",
+      "category": "pulmonary",
+      "subcategory": "obstructive",
+      "status": "active",
+      "onset": "April 2009",
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 8,
+          "span": "Bronchopneumonia"
+        },
+        {
+          "note_id": "text_0",
+          "line_no": 38,
+          "span": "Left-sided bronchopneumonia"
+        }
+      ]
+    },
+    {
+      "condition_name": "Impaired Working Memory",
+      "category": "neurological",
+      "subcategory": "functional",
+      "status": "active",
+      "onset": "unknown",
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 143,
+          "span": "Short-term retention of information"
+        }
+      ]
+    },
+    {
+      "condition_name": "Limited Attention",
+      "category": "neurological",
+      "subcategory": "functional",
+      "status": "active",
+      "onset": "unknown",
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 149,
+          "span": "limited attention"
+        }
+      ]
+    },
+    {
+      "condition_name": "Reduced Information Processing Speed",
+      "category": "neurological",
+      "subcategory": "functional",
+      "status": "active",
+      "onset": "unknown",
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 139,
+          "span": "Information processing speed"
+        }
+      ]
+    }
+  ]
+}

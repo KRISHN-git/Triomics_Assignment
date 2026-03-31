@@ -2,6 +2,7 @@ import os
 import json
 import time
 import re
+from pathlib import Path
 from openai import OpenAI, RateLimitError
 
 
@@ -15,10 +16,54 @@ def get_model():
     return os.environ.get("OPENAI_MODEL", "llama-3.3-70b-versatile")
 
 
+def load_taxonomy_str() -> str:
+    
+    taxonomy_path = Path(__file__).parent.parent / "taxonomy.json"
+
+    if taxonomy_path.exists():
+        data = json.loads(taxonomy_path.read_text(encoding="utf-8"))
+        lines = []
+        for cat, info in data["condition_categories"].items():
+            subcats = ", ".join(info["subcategories"].keys())
+            lines.append(f"{cat}: {subcats}")
+        return "\n".join(lines)
+
+    print("WARNING: taxonomy.json not found, using hardcoded fallback")
+    return (
+        "cancer: primary_malignancy, metastasis, pre_malignant, benign, cancer_of_unknown_primary\n"
+        "cardiovascular: coronary, hypertensive, rhythm, vascular, structural, inflammatory_vascular\n"
+        "infectious: bacterial, viral, fungal, parasitic, spirochetal\n"
+        "metabolic_endocrine: diabetes, thyroid, genetic_metabolic, nutritional_deficiency, lipid, adrenal, pituitary\n"
+        "neurological: cerebrovascular, traumatic, seizure, functional, degenerative, neuromuscular\n"
+        "pulmonary: obstructive, acute_respiratory, structural, occupational, cystic\n"
+        "gastrointestinal: hepatic, biliary, upper_gi, lower_gi, inflammatory_bowel, functional_gi\n"
+        "renal: renal_failure, structural, glomerular, renovascular\n"
+        "hematological: cytopenia, coagulation, hemoglobinopathy\n"
+        "immunological: immunodeficiency, allergic, autoimmune, autoinflammatory, complement_deficiency\n"
+        "musculoskeletal: fracture, degenerative, crystal_arthropathy, connective_tissue_disorder\n"
+        "toxicological: poisoning, environmental_exposure\n"
+        "dental_oral: dental, temporomandibular"
+    )
+
+
+def load_disambiguation_rules() -> str:
+    taxonomy_path = Path(__file__).parent.parent / "taxonomy.json"
+    if taxonomy_path.exists():
+        data = json.loads(taxonomy_path.read_text(encoding="utf-8"))
+        rules = data.get("disambiguation_rules", [])
+        return "\n".join(f"- {r['rule']}: {r['explanation']}" for r in rules)
+    return ""
+
+
+TAXONOMY_STR = load_taxonomy_str()
+DISAMBIGUATION_STR = load_disambiguation_rules()
+
+
 MERGER_SYSTEM_PROMPT = """You are a senior medical coding specialist.
 Classify medical conditions using the provided taxonomy.
 Return ONLY a valid JSON array. No markdown. No explanation. No extra text.
 Start with [ and end with ]."""
+
 
 MERGER_USER_PROMPT = """Merge these per-note medical condition extractions for one patient.
 
@@ -30,19 +75,7 @@ TASKS:
 5. EVIDENCE — all mentions from all notes
 
 TAXONOMY (use EXACTLY these keys):
-cancer: primary_malignancy, metastasis, pre_malignant, benign, cancer_of_unknown_primary
-cardiovascular: coronary, hypertensive, rhythm, vascular, structural, inflammatory_vascular
-infectious: bacterial, viral, fungal, parasitic, spirochetal
-metabolic_endocrine: diabetes, thyroid, genetic_metabolic, nutritional_deficiency, lipid, adrenal, pituitary
-neurological: cerebrovascular, traumatic, seizure, functional, degenerative, neuromuscular
-pulmonary: obstructive, acute_respiratory, structural, occupational, cystic
-gastrointestinal: hepatic, biliary, upper_gi, lower_gi, inflammatory_bowel, functional_gi
-renal: renal_failure, structural, glomerular, renovascular
-hematological: cytopenia, coagulation, hemoglobinopathy
-immunological: immunodeficiency, allergic, autoimmune, autoinflammatory, complement_deficiency
-musculoskeletal: fracture, degenerative, crystal_arthropathy, connective_tissue_disorder
-toxicological: poisoning, environmental_exposure
-dental_oral: dental, temporomandibular
+{taxonomy}
 
 CRITICAL SUBCATEGORY RULES:
 - pulmonary.structural → pneumothorax, pleural effusion, interstitial lung disease, pulmonary fibrosis
@@ -54,14 +87,15 @@ CRITICAL SUBCATEGORY RULES:
 - musculoskeletal.fracture → bone fractures only (NOT cancer bone destruction → cancer.metastasis)
 - hematological.cytopenia → ALL low blood counts regardless of cause
 
-DISAMBIGUATION RULES:
-- Heart failure → classify by CAUSE (CAD→coronary, HTN→hypertensive, unknown→structural)
-- Diabetic complications → ALWAYS metabolic_endocrine.diabetes (NOT renal/neuro)
-- ANY low blood count → ALWAYS hematological.cytopenia
+DISAMBIGUATION RULES (from official taxonomy):
+{disambiguation}
+
+ADDITIONAL RULES:
+- ANY low blood count → ALWAYS hematological.cytopenia regardless of cause
 - Metastases → ONE entry PER site (brain≠liver≠bone≠lung)
 - Esophageal varices → gastrointestinal.upper_gi
-- Drug allergies → immunological.allergic
-- Procedures (surgery, transplant, biopsy) → SKIP, not conditions
+- Drug/contrast allergies → immunological.allergic
+- Procedures (surgery, biopsy, transplant) → SKIP, not conditions
 - Nicotine/alcohol abuse → toxicological.environmental_exposure (NOT poisoning)
 - Radiodermatitis → toxicological.environmental_exposure (NOT poisoning)
 
@@ -71,15 +105,18 @@ STATUS RULES (use LATEST note):
 - suspected: "suspected", "possible", "rule out", "likely", "suggestive of"
 
 ONSET DATE RULES:
-- Priority 1: explicitly stated date ("diagnosed 05/2014" → "May 2014")
-- Priority 2: encounter date of earliest note where condition appears
-- Priority 3: convert relative ("since mid-December" in Jan 2017 → "December 2016")
-- Priority 4: null (truly unknown)
+- Priority 1: explicitly stated date for condition ("diagnosed 05/2014" → "May 2014")
+- Priority 2: use encounter date of EARLIEST note where condition appears (from Note encounter dates below)
+- Priority 3: convert relative dates ("since mid-December" in Jan 2017 → "December 2016")
+- Priority 4: null ONLY if truly no date can be determined
+- NEVER return null if an encounter date is available
 - Symptom date ≠ diagnosis onset
 
-Note encounter dates: {note_dates_json}
+Note encounter dates:
+{note_dates_json}
 
-Per-note extractions: {extractions_json}
+Per-note extractions:
+{extractions_json}
 
 OUTPUT — return ONLY this JSON array:
 [
@@ -90,14 +127,13 @@ OUTPUT — return ONLY this JSON array:
     "status": "active",
     "onset": "May 2014",
     "evidence": [
-      {{"note_id": "text_0", "line_no": 13, "span": "Left midline tongue carcinoma pT1"}}
+      {{"note_id": "text_0", "line_no": 13, "span": "Left midline tongue carcinoma pT1 pN0"}}
     ]
   }}
 ]"""
 
 
 def parse_retry_seconds(error_message: str) -> float:
-
     match = re.search(r'try again in (\d+(?:\.\d+)?)', str(error_message))
     if match:
         return float(match.group(1)) + 2
@@ -166,7 +202,7 @@ def compress_extractions(all_extractions: dict) -> dict:
                 "status_hint":    c.get("status_hint", ""),
                 "onset_hint":     c.get("onset_hint", ""),
                 "line_no":        c.get("line_no", 0),
-                "span":           c.get("span", "")[:40]
+                "span":           c.get("span", "")[:80]
             }
             for c in conditions
         ]
@@ -174,7 +210,6 @@ def compress_extractions(all_extractions: dict) -> dict:
 
 
 def call_merger_with_smart_retry(prompt: str, max_attempts: int = 5) -> str:
-
     for attempt in range(max_attempts):
         try:
             response = get_client().chat.completions.create(
@@ -203,11 +238,12 @@ def call_merger_with_smart_retry(prompt: str, max_attempts: int = 5) -> str:
 
 
 def _merge_batch(extractions: dict, note_dates: dict) -> list:
-
     extractions_json = json.dumps(extractions, indent=1)
     note_dates_json  = json.dumps(note_dates)
 
     prompt = MERGER_USER_PROMPT.format(
+        taxonomy=TAXONOMY_STR,
+        disambiguation=DISAMBIGUATION_STR,
         extractions_json=extractions_json,
         note_dates_json=note_dates_json
     )
@@ -233,7 +269,6 @@ def _merge_batch(extractions: dict, note_dates: dict) -> list:
 def merge_and_classify(all_extractions: dict, note_dates: dict) -> list:
     
     compressed = compress_extractions(all_extractions)
-
     total = sum(len(v) for v in compressed.values())
     print(f"  Total compressed conditions: {total}")
 
@@ -251,12 +286,10 @@ def merge_and_classify(all_extractions: dict, note_dates: dict) -> list:
 
     print(f"  Batch 1: notes {note_ids[:mid]}")
     results1 = _merge_batch(batch1, dates1)
-
     time.sleep(10)
 
     print(f"  Batch 2: notes {note_ids[mid:]}")
     results2 = _merge_batch(batch2, dates2)
-
     time.sleep(10)
 
     print(f"  Final merge: combining {len(results1)} + {len(results2)} conditions...")

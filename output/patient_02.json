@@ -1,0 +1,509 @@
+{
+  "patient_id": "patient_02",
+  "conditions": [
+    {
+      "condition_name": "Malignant Melanoma",
+      "category": "cancer",
+      "subcategory": "primary_malignancy",
+      "status": "active",
+      "onset": "February 2018",
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 9,
+          "span": "Malignant melanoma of the left scapula"
+        },
+        {
+          "note_id": "text_0",
+          "line_no": 121,
+          "span": "Malignant melanoma, left upper back"
+        },
+        {
+          "note_id": "text_0",
+          "line_no": 106,
+          "span": "suspicious lesion caudal to left scapula"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 7,
+          "span": "Metastatic malignant melanoma"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 101,
+          "span": "malignant melanoma"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 9,
+          "span": "M1, stage IV"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 12,
+          "span": "left upper back"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 11,
+          "span": "Metastatic malignant melanoma"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 172,
+          "span": "Multiple nodular soft tissue metastases"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 9,
+          "span": "Metastatic malignant melanoma"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 12,
+          "span": "Resection of primary tumor"
+        }
+      ]
+    },
+    {
+      "condition_name": "Nephrolithiasis",
+      "category": "renal",
+      "subcategory": "structural",
+      "status": "active",
+      "onset": "February 2018",
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 94,
+          "span": "Nephrolithiasis on the right side"
+        }
+      ]
+    },
+    {
+      "condition_name": "Struma nodosa",
+      "category": "metabolic_endocrine",
+      "subcategory": "thyroid",
+      "status": "active",
+      "onset": "February 2018",
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 80,
+          "span": "Struma nodosa with several hypodense nodes"
+        }
+      ]
+    },
+    {
+      "condition_name": "Osteopenia",
+      "category": "metabolic_endocrine",
+      "subcategory": "nutritional_deficiency",
+      "status": "active",
+      "onset": "February 2018",
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 101,
+          "span": "Osteopenia"
+        }
+      ]
+    },
+    {
+      "condition_name": "Exsiccation Eczema",
+      "category": "immunological",
+      "subcategory": "allergic",
+      "status": "active",
+      "onset": "October 2020",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 44,
+          "span": "exsiccation eczema"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 246,
+          "span": "previous exsiccation eczema"
+        }
+      ]
+    },
+    {
+      "condition_name": "Hematoma",
+      "category": "hematological",
+      "subcategory": "coagulation",
+      "status": "resolved",
+      "onset": "October 2020",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 62,
+          "span": "hematoma on the left forehead"
+        }
+      ]
+    },
+    {
+      "condition_name": "Subfascial Empyema",
+      "category": "infectious",
+      "subcategory": "bacterial",
+      "status": "resolved",
+      "onset": "October 2020",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 134,
+          "span": "subfascial empyema"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 242,
+          "span": "previous history of an empyema"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 306,
+          "span": "an empyema"
+        }
+      ]
+    },
+    {
+      "condition_name": "Wound infection",
+      "category": "infectious",
+      "subcategory": "bacterial",
+      "status": "active",
+      "onset": "October 2020",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 241,
+          "span": "infection"
+        }
+      ]
+    },
+    {
+      "condition_name": "Uterine fibroids",
+      "category": "gastrointestinal",
+      "subcategory": "lower_gi",
+      "status": "suspected",
+      "onset": "October 2020",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 297,
+          "span": "suspected uterine fibroids"
+        }
+      ]
+    },
+    {
+      "condition_name": "Enlarged right ovary",
+      "category": "gastrointestinal",
+      "subcategory": "lower_gi",
+      "status": "active",
+      "onset": "October 2020",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 298,
+          "span": "enlarged right ovary"
+        }
+      ]
+    },
+    {
+      "condition_name": "Wound Healing Disorder",
+      "category": "gastrointestinal",
+      "subcategory": "lower_gi",
+      "status": "active",
+      "onset": "October 2020",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 305,
+          "span": "wound healing disorder"
+        }
+      ]
+    },
+    {
+      "condition_name": "Epidural Abscess",
+      "category": "infectious",
+      "subcategory": "bacterial",
+      "status": "resolved",
+      "onset": "October 2020",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 319,
+          "span": "epidural abscess"
+        }
+      ]
+    },
+    {
+      "condition_name": "Dysplastic nevus with severe atypia",
+      "category": "cancer",
+      "subcategory": "pre_malignant",
+      "status": "active",
+      "onset": "November 2020",
+      "evidence": [
+        {
+          "note_id": "text_2",
+          "line_no": 60,
+          "span": "right arm"
+        }
+      ]
+    },
+    {
+      "condition_name": "Invasive melanoma",
+      "category": "cancer",
+      "subcategory": "primary_malignancy",
+      "status": "suspected",
+      "onset": "November 2020",
+      "evidence": [
+        {
+          "note_id": "text_2",
+          "line_no": 61,
+          "span": "further excision recommended"
+        }
+      ]
+    },
+    {
+      "condition_name": "Cervical Lymph Node Metastasis",
+      "category": "cancer",
+      "subcategory": "metastasis",
+      "status": "active",
+      "onset": "January 2021",
+      "evidence": [
+        {
+          "note_id": "text_3",
+          "line_no": 26,
+          "span": "Cervical lymph node metastasis"
+        }
+      ]
+    },
+    {
+      "condition_name": "SARS-CoV2 Infection",
+      "category": "infectious",
+      "subcategory": "viral",
+      "status": "active",
+      "onset": "January 2021",
+      "evidence": [
+        {
+          "note_id": "text_3",
+          "line_no": 32,
+          "span": "SARS-CoV2 PCR (Nose/Throat): POSITIVE"
+        }
+      ]
+    },
+    {
+      "condition_name": "Meningeosis",
+      "category": "neurological",
+      "subcategory": "cerebrovascular",
+      "status": "suspected",
+      "onset": "January 2021",
+      "evidence": [
+        {
+          "note_id": "text_3",
+          "line_no": 45,
+          "span": "exclude meningeosis"
+        }
+      ]
+    },
+    {
+      "condition_name": "Scarring Fibrosis",
+      "category": "musculoskeletal",
+      "subcategory": "degenerative",
+      "status": "active",
+      "onset": "January 2021",
+      "evidence": [
+        {
+          "note_id": "text_3",
+          "line_no": 158,
+          "span": "scarring with fibrosis"
+        }
+      ]
+    },
+    {
+      "condition_name": "Lymph Node Metastases",
+      "category": "cancer",
+      "subcategory": "metastasis",
+      "status": "active",
+      "onset": "January 2021",
+      "evidence": [
+        {
+          "note_id": "text_3",
+          "line_no": 106,
+          "span": "darkened lymph node metastases"
+        }
+      ]
+    },
+    {
+      "condition_name": "Pulmonary Metastases",
+      "category": "cancer",
+      "subcategory": "metastasis",
+      "status": "active",
+      "onset": "February 2022",
+      "evidence": [
+        {
+          "note_id": "text_4",
+          "line_no": 44,
+          "span": "multiple nodular opacities"
+        }
+      ]
+    },
+    {
+      "condition_name": "Cardiac Metastasis",
+      "category": "cancer",
+      "subcategory": "metastasis",
+      "status": "suspected",
+      "onset": "February 2022",
+      "evidence": [
+        {
+          "note_id": "text_4",
+          "line_no": 49,
+          "span": "concerning 2 cm mass"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 116,
+          "span": "cardiac metastasis"
+        }
+      ]
+    },
+    {
+      "condition_name": "Lymphadenopathy",
+      "category": "cancer",
+      "subcategory": "metastasis",
+      "status": "active",
+      "onset": "February 2022",
+      "evidence": [
+        {
+          "note_id": "text_4",
+          "line_no": 50,
+          "span": "lymphadenopathy with a dominant node"
+        }
+      ]
+    },
+    {
+      "condition_name": "Osseous Metastatic Disease",
+      "category": "cancer",
+      "subcategory": "metastasis",
+      "status": "active",
+      "onset": "February 2022",
+      "evidence": [
+        {
+          "note_id": "text_4",
+          "line_no": 52,
+          "span": "lytic lesions involving the sternum"
+        }
+      ]
+    },
+    {
+      "condition_name": "Hepatic Metastases",
+      "category": "cancer",
+      "subcategory": "metastasis",
+      "status": "active",
+      "onset": "February 2022",
+      "evidence": [
+        {
+          "note_id": "text_4",
+          "line_no": 55,
+          "span": "multiple hypodense lesions"
+        }
+      ]
+    },
+    {
+      "condition_name": "Muscular Metastasis",
+      "category": "cancer",
+      "subcategory": "metastasis",
+      "status": "active",
+      "onset": "February 2022",
+      "evidence": [
+        {
+          "note_id": "text_4",
+          "line_no": 60,
+          "span": "2.5 cm mass within the left psoas muscle"
+        }
+      ]
+    },
+    {
+      "condition_name": "Metastatic Disease",
+      "category": "cancer",
+      "subcategory": "metastasis",
+      "status": "active",
+      "onset": "February 2022",
+      "evidence": [
+        {
+          "note_id": "text_4",
+          "line_no": 114,
+          "span": "active metastatic disease"
+        }
+      ]
+    },
+    {
+      "condition_name": "Pulmonary Nodules",
+      "category": "pulmonary",
+      "subcategory": "obstructive",
+      "status": "active",
+      "onset": "February 2022",
+      "evidence": [
+        {
+          "note_id": "text_4",
+          "line_no": 115,
+          "span": "pulmonary nodules"
+        }
+      ]
+    },
+    {
+      "condition_name": "Lymph Node Involvement",
+      "category": "cancer",
+      "subcategory": "metastasis",
+      "status": "active",
+      "onset": "February 2022",
+      "evidence": [
+        {
+          "note_id": "text_4",
+          "line_no": 125,
+          "span": "lymph node involvement"
+        }
+      ]
+    },
+    {
+      "condition_name": "Skeletal Lesions",
+      "category": "cancer",
+      "subcategory": "metastasis",
+      "status": "active",
+      "onset": "February 2022",
+      "evidence": [
+        {
+          "note_id": "text_4",
+          "line_no": 117,
+          "span": "skeletal lesions"
+        }
+      ]
+    },
+    {
+      "condition_name": "Frontal Tumor",
+      "category": "cancer",
+      "subcategory": "metastasis",
+      "status": "resolved",
+      "onset": "January 2020",
+      "evidence": [
+        {
+          "note_id": "text_4",
+          "line_no": 15,
+          "span": "Microsurgical resection right frontal tumor"
+        }
+      ]
+    },
+    {
+      "condition_name": "Empyema",
+      "category": "infectious",
+      "subcategory": "bacterial",
+      "status": "resolved",
+      "onset": "February 2020",
+      "evidence": [
+        {
+          "note_id": "text_4",
+          "line_no": 17,
+          "span": "Excision of empyema"
+        }
+      ]
+    }
+  ]
+}

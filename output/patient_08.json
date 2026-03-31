@@ -1,0 +1,646 @@
+{
+  "patient_id": "patient_08",
+  "conditions": [
+    {
+      "condition_name": "Hepatocellular carcinoma",
+      "category": "cancer",
+      "subcategory": "primary_malignancy",
+      "status": "active",
+      "onset": "April 1967",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 6,
+          "span": "hepatocellular carcinoma"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 390,
+          "span": "Dissiminated HCC foci in all segments"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 489,
+          "span": "hepatic cellular carcinoma"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 520,
+          "span": "Hepatocellular carcinoma"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 10,
+          "span": "HCC"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 9,
+          "span": "disseminated HCC foci"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 135,
+          "span": "multifocal HCC"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 12,
+          "span": "Hepatocellular Carcinoma (HCC)"
+        }
+      ]
+    },
+    {
+      "condition_name": "Liver cirrhosis",
+      "category": "gastrointestinal",
+      "subcategory": "hepatic",
+      "status": "active",
+      "onset": "May 20",
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 104,
+          "span": "Liver cirrhosis with multiple nodules"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 11,
+          "span": "liver cirrhosis Child B"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 258,
+          "span": "liver cirrhosis"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 377,
+          "span": "liver cirrhosis with nodular liver parenchyma"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 488,
+          "span": "liver cirrhosis"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 504,
+          "span": "liver cirrhosis with multifocal HCC"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 521,
+          "span": "hydropic decompensated liver cirrhosis"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 8,
+          "span": "Liver cirrhosis, Child-Pugh B"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 14,
+          "span": "Hydropic, decompensated liver cirrhosis"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 17,
+          "span": "Decompensated cirrhosis of the liver"
+        }
+      ]
+    },
+    {
+      "condition_name": "Esophageal varices",
+      "category": "gastrointestinal",
+      "subcategory": "upper_gi",
+      "status": "active",
+      "onset": "May 22, 2020",
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 79,
+          "span": "Grade III esophageal varices"
+        },
+        {
+          "note_id": "text_0",
+          "line_no": 122,
+          "span": "multiple prominent varices"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 16,
+          "span": "esophageal varices III°"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 198,
+          "span": "variceal strands"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 215,
+          "span": "esophageal varices"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 382,
+          "span": "varices of the esophagus and fundus"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 412,
+          "span": "residual varices"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 19,
+          "span": "esophageal varices III°"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 121,
+          "span": "Esophageal varices"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 10,
+          "span": "esophageal varices"
+        }
+      ]
+    },
+    {
+      "condition_name": "Gastric varices",
+      "category": "gastrointestinal",
+      "subcategory": "upper_gi",
+      "status": "active",
+      "onset": "May 22, 2020",
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 135,
+          "span": "pronounced varices near the cardiac region"
+        }
+      ]
+    },
+    {
+      "condition_name": "Portal hypertensive gastropathy",
+      "category": "gastrointestinal",
+      "subcategory": "upper_gi",
+      "status": "active",
+      "onset": "June 11, 2020",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 20,
+          "span": "portal hypertensive gastropathy"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 428,
+          "span": "portal hypertensive gastropathy"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 23,
+          "span": "portal hypertensive gastropathy"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 114,
+          "span": "portal hypertensive gastropathy"
+        }
+      ]
+    },
+    {
+      "condition_name": "Splenomegaly",
+      "category": "gastrointestinal",
+      "subcategory": "hepatic",
+      "status": "active",
+      "onset": "April 1967",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 31,
+          "span": "splenomegaly"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 101,
+          "span": "with splenomegaly"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 490,
+          "span": "splenomegaly"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 34,
+          "span": "Splenomegaly"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 27,
+          "span": "Splenomegaly"
+        }
+      ]
+    },
+    {
+      "condition_name": "Cholecystolithiasis",
+      "category": "gastrointestinal",
+      "subcategory": "biliary",
+      "status": "active",
+      "onset": "April 1967",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 33,
+          "span": "cholecystolithiasis"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 380,
+          "span": "cholecystolithiasis and"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 36,
+          "span": "Cholecystolithiasis"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 29,
+          "span": "Cholelithiasis"
+        }
+      ]
+    },
+    {
+      "condition_name": "Arterial hypertension",
+      "category": "cardiovascular",
+      "subcategory": "hypertensive",
+      "status": "active",
+      "onset": "April 1967",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 35,
+          "span": "arterial hypertension"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 38,
+          "span": "Arterial hypertension"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 31,
+          "span": "Arterial hypertension"
+        }
+      ]
+    },
+    {
+      "condition_name": "Aortic sclerosis",
+      "category": "cardiovascular",
+      "subcategory": "vascular",
+      "status": "active",
+      "onset": "April 1967",
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 63,
+          "span": "Aortic sclerosis is present"
+        }
+      ]
+    },
+    {
+      "condition_name": "Aortic Valve Stenosis",
+      "category": "cardiovascular",
+      "subcategory": "structural",
+      "status": "active",
+      "onset": "April 1967",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 122,
+          "span": "aortic valve stenosis"
+        }
+      ]
+    },
+    {
+      "condition_name": "Varicose Veins",
+      "category": "cardiovascular",
+      "subcategory": "vascular",
+      "status": "active",
+      "onset": "April 1967",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 574,
+          "span": "varicose vein status survey"
+        }
+      ]
+    },
+    {
+      "condition_name": "Stroke",
+      "category": "neurological",
+      "subcategory": "cerebrovascular",
+      "status": "resolved",
+      "onset": "2016",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 39,
+          "span": "status post stroke"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 35,
+          "span": "History of stroke"
+        }
+      ]
+    },
+    {
+      "condition_name": "Apoplexy",
+      "category": "neurological",
+      "subcategory": "cerebrovascular",
+      "status": "resolved",
+      "onset": "April 1967",
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 16,
+          "span": "Status post apoplexy"
+        }
+      ]
+    },
+    {
+      "condition_name": "Osteoporosis",
+      "category": "metabolic_endocrine",
+      "subcategory": "genetic_metabolic",
+      "status": "active",
+      "onset": "April 1967",
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 113,
+          "span": "update of osteoporosis medication"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 37,
+          "span": "osteoporosis"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 458,
+          "span": "osteoporotic changes"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 33,
+          "span": "Osteoporosis"
+        }
+      ]
+    },
+    {
+      "condition_name": "Osteoporotic vertebral body",
+      "category": "musculoskeletal",
+      "subcategory": "degenerative",
+      "status": "active",
+      "onset": "April 1967",
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 7,
+          "span": "Osteoporotic vertebral body sintering"
+        }
+      ]
+    },
+    {
+      "condition_name": "Osteoporotic compression fractures",
+      "category": "musculoskeletal",
+      "subcategory": "degenerative",
+      "status": "active",
+      "onset": "April 1967",
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 97,
+          "span": "Multiple, older, osteoporotic compression fractures"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 25,
+          "span": "fresh osteoporotic thoracic vertebra 8 fracture"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 28,
+          "span": "Fresh osteoporotic thoracic vertebra 8 fracture"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 22,
+          "span": "Osteoporotic thoracic vertebral fracture"
+        }
+      ]
+    },
+    {
+      "condition_name": "Fracture at lumbar vertebra 2",
+      "category": "musculoskeletal",
+      "subcategory": "fracture",
+      "status": "active",
+      "onset": "May 22, 2020",
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 90,
+          "span": "Fracture at the base plate of lumbar vertebra 2"
+        }
+      ]
+    },
+    {
+      "condition_name": "Fracture at thoracic vertebra 8",
+      "category": "musculoskeletal",
+      "subcategory": "fracture",
+      "status": "active",
+      "onset": "May 22, 2020",
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 94,
+          "span": "Suspicion of new small fracture at thoracic vertebra 8"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 25,
+          "span": "fresh osteoporotic thoracic vertebra 8 fracture"
+        }
+      ]
+    },
+    {
+      "condition_name": "Subacute Compression Fracture",
+      "category": "musculoskeletal",
+      "subcategory": "degenerative",
+      "status": "active",
+      "onset": "April 1967",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 113,
+          "span": "subacute cover plate compression fracture"
+        }
+      ]
+    },
+    {
+      "condition_name": "Anterior Endplate Collapse",
+      "category": "musculoskeletal",
+      "subcategory": "degenerative",
+      "status": "active",
+      "onset": "April 1967",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 456,
+          "span": "anterior endplate collapse"
+        }
+      ]
+    },
+    {
+      "condition_name": "Coxarthrosis",
+      "category": "musculoskeletal",
+      "subcategory": "degenerative",
+      "status": "active",
+      "onset": "June 18, 2020",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 496,
+          "span": "coxarthrosis"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 510,
+          "span": "moderate coxarthrosis"
+        }
+      ]
+    },
+    {
+      "condition_name": "Facet Joint Arthrosis",
+      "category": "musculoskeletal",
+      "subcategory": "degenerative",
+      "status": "active",
+      "onset": "April 1967",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 315,
+          "span": "hypertrophic facet joint arthrosis"
+        }
+      ]
+    },
+    {
+      "condition_name": "Decompensated Positive Sagittal Spinal Imbalance",
+      "category": "musculoskeletal",
+      "subcategory": "degenerative",
+      "status": "active",
+      "onset": "June 13, 2020",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 439,
+          "span": "decompensated positive sagittal spinal imbalance"
+        }
+      ]
+    },
+    {
+      "condition_name": "Pleural Effusions",
+      "category": "pulmonary",
+      "subcategory": "structural",
+      "status": "active",
+      "onset": "April 1967",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 508,
+          "span": "bilateral minor pleural effusions"
+        }
+      ]
+    },
+    {
+      "condition_name": "Axial Hernia",
+      "category": "musculoskeletal",
+      "subcategory": "degenerative",
+      "status": "active",
+      "onset": "April 1967",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 388,
+          "span": "axial hernia"
+        }
+      ]
+    },
+    {
+      "condition_name": "Hydrops of the gallbladder",
+      "category": "gastrointestinal",
+      "subcategory": "biliary",
+      "status": "active",
+      "onset": "April 1967",
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 106,
+          "span": "Hydrops of the gallbladder"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 380,
+          "span": "cholecystolithiasis and gallbladder hydrops"
+        }
+      ]
+    },
+    {
+      "condition_name": "Hemangioma",
+      "category": "gastrointestinal",
+      "subcategory": "hepatic",
+      "status": "suspected",
+      "onset": "April 1967",
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 67,
+          "span": "suspected hemangioma"
+        }
+      ]
+    },
+    {
+      "condition_name": "Epithelial Neoplasia",
+      "category": "cancer",
+      "subcategory": "primary_malignancy",
+      "status": "suspected",
+      "onset": "April 1967",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 565,
+          "span": "Cells of an epithelial neoplasia"
+        }
+      ]
+    },
+    {
+      "condition_name": "Hepatic Space-Occupying Lesions",
+      "category": "gastrointestinal",
+      "subcategory": "hepatic",
+      "status": "suspected",
+      "onset": "April 1967",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 259,
+          "span": "hepatic space-occupying lesions"
+        }
+      ]
+    }
+  ]
+}
