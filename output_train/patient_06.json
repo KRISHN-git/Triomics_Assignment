@@ -46,7 +46,7 @@
         {
           "note_id": "text_7",
           "line_no": 27,
-          "span": "tongue base carcinoma"
+          "span": "left tongue base carcinoma"
         }
       ]
     },
@@ -55,7 +55,7 @@
       "category": "cardiovascular",
       "subcategory": "hypertensive",
       "status": "active",
-      "onset": null,
+      "onset": "August 1965",
       "evidence": [
         {
           "note_id": "text_0",
@@ -100,35 +100,11 @@
       ]
     },
     {
-      "condition_name": "Liver Cirrhosis",
-      "category": "gastrointestinal",
-      "subcategory": "hepatic",
-      "status": "active",
-      "onset": null,
-      "evidence": [
-        {
-          "note_id": "text_0",
-          "line_no": 63,
-          "span": "Liver cirrhosis"
-        },
-        {
-          "note_id": "text_6",
-          "line_no": 44,
-          "span": "Liver cirrhosis with alcohol abuse"
-        },
-        {
-          "note_id": "text_7",
-          "line_no": 38,
-          "span": "Liver cirrhosis with alcohol abuse"
-        }
-      ]
-    },
-    {
       "condition_name": "Idiopathic Thrombocytopenia",
       "category": "hematological",
       "subcategory": "cytopenia",
       "status": "active",
-      "onset": null,
+      "onset": "August 1965",
       "evidence": [
         {
           "note_id": "text_0",
@@ -142,12 +118,12 @@
       "category": "metabolic_endocrine",
       "subcategory": "diabetes",
       "status": "active",
-      "onset": null,
+      "onset": "August 1965",
       "evidence": [
         {
           "note_id": "text_0",
           "line_no": 23,
-          "span": "Non-insulin-dependent diabetes mellitus"
+          "span": "Non-insulin-dependent diabetes mellitus type II"
         },
         {
           "note_id": "text_1",
@@ -177,12 +153,12 @@
         {
           "note_id": "text_6",
           "line_no": 46,
-          "span": "Non-insulin-dependent diabetes mellitus"
+          "span": "Non-insulin-dependent diabetes mellitus type II"
         },
         {
           "note_id": "text_7",
           "line_no": 40,
-          "span": "Non-insulin-dependent diabetes mellitus"
+          "span": "Non-insulin-dependent diabetes mellitus type II"
         }
       ]
     },
@@ -191,7 +167,7 @@
       "category": "metabolic_endocrine",
       "subcategory": "thyroid",
       "status": "active",
-      "onset": null,
+      "onset": "August 1965",
       "evidence": [
         {
           "note_id": "text_0",
@@ -240,7 +216,7 @@
       "category": "toxicological",
       "subcategory": "environmental_exposure",
       "status": "active",
-      "onset": null,
+      "onset": "August 1965",
       "evidence": [
         {
           "note_id": "text_0",
@@ -250,11 +226,35 @@
       ]
     },
     {
+      "condition_name": "Liver Cirrhosis",
+      "category": "gastrointestinal",
+      "subcategory": "hepatic",
+      "status": "active",
+      "onset": "August 1965",
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 63,
+          "span": "Liver cirrhosis"
+        },
+        {
+          "note_id": "text_6",
+          "line_no": 44,
+          "span": "Liver cirrhosis with alcohol abuse"
+        },
+        {
+          "note_id": "text_7",
+          "line_no": 38,
+          "span": "Liver cirrhosis with alcohol abuse"
+        }
+      ]
+    },
+    {
       "condition_name": "Lymph Node Metastases",
       "category": "cancer",
       "subcategory": "metastasis",
-      "status": "active",
-      "onset": null,
+      "status": "suspected",
+      "onset": "August 1965",
       "evidence": [
         {
           "note_id": "text_0",
@@ -264,49 +264,11 @@
       ]
     },
     {
-      "condition_name": "Squamous Cell Carcinoma",
-      "category": "cancer",
-      "subcategory": "primary_malignancy",
-      "status": "active",
-      "onset": null,
-      "evidence": [
-        {
-          "note_id": "text_0",
-          "line_no": 200,
-          "span": "presence of squamous cell carcinoma"
-        },
-        {
-          "note_id": "text_0",
-          "line_no": 215,
-          "span": "Invasive squamous cell carcinoma"
-        },
-        {
-          "note_id": "text_1",
-          "line_no": 36,
-          "span": "Invasive, moderately differentiated, squ"
-        }
-      ]
-    },
-    {
-      "condition_name": "Lymphofollicular Hyperplasia",
-      "category": "immunological",
-      "subcategory": "autoimmune",
-      "status": "active",
-      "onset": null,
-      "evidence": [
-        {
-          "note_id": "text_0",
-          "line_no": 103,
-          "span": "lymphofollicular hyperplasia"
-        }
-      ]
-    },
-    {
       "condition_name": "Oral Thrush",
       "category": "infectious",
       "subcategory": "fungal",
       "status": "active",
-      "onset": null,
+      "onset": "August 1965",
       "evidence": [
         {
           "note_id": "text_1",
@@ -350,7 +312,7 @@
       "category": "neurological",
       "subcategory": "functional",
       "status": "active",
-      "onset": null,
+      "onset": "August 1965",
       "evidence": [
         {
           "note_id": "text_1",
@@ -394,12 +356,12 @@
       "category": "cancer",
       "subcategory": "primary_malignancy",
       "status": "active",
-      "onset": null,
+      "onset": "August 1965",
       "evidence": [
         {
           "note_id": "text_3",
           "line_no": 55,
-          "span": "extensive recurrence of oropharyngeal ca"
+          "span": "extensive recurrence of oropharyngeal cancer"
         }
       ]
     },
@@ -408,7 +370,7 @@
       "category": "cancer",
       "subcategory": "metastasis",
       "status": "active",
-      "onset": null,
+      "onset": "unknown",
       "evidence": [
         {
           "note_id": "text_5",
@@ -418,55 +380,12 @@
         {
           "note_id": "text_6",
           "line_no": 6,
-          "span": "Metachronous pulmonary metastatic squamo"
+          "span": "Metachronous pulmonary metastatic squamous cell carcinoma"
         },
         {
           "note_id": "text_7",
           "line_no": 6,
-          "span": "Metachronous pulmonary metastatic squamo"
-        }
-      ]
-    },
-    {
-      "condition_name": "Recurrent oropharyngeal carcinoma",
-      "category": "cancer",
-      "subcategory": "primary_malignancy",
-      "status": "resolved",
-      "onset": "April 2014",
-      "evidence": [
-        {
-          "note_id": "text_5",
-          "line_no": 25,
-          "span": "Recurrent oropharyngeal carcinoma ICD-10"
-        },
-        {
-          "note_id": "text_6",
-          "line_no": 25,
-          "span": "Recurrent oropharyngeal carcinoma ICD-10"
-        },
-        {
-          "note_id": "text_7",
-          "line_no": 19,
-          "span": "Recurrent oropharyngeal carcinoma"
-        }
-      ]
-    },
-    {
-      "condition_name": "Hypopharyngeal carcinoma",
-      "category": "cancer",
-      "subcategory": "primary_malignancy",
-      "status": "resolved",
-      "onset": null,
-      "evidence": [
-        {
-          "note_id": "text_5",
-          "line_no": 72,
-          "span": "metastatic recurrence of the previously "
-        },
-        {
-          "note_id": "text_6",
-          "line_no": 60,
-          "span": "previously diagnosed pulmonary metastati"
+          "span": "Metachronous pulmonary metastatic squamous cell carcinoma"
         }
       ]
     },
@@ -475,7 +394,7 @@
       "category": "pulmonary",
       "subcategory": "structural",
       "status": "active",
-      "onset": "January 21, 2022",
+      "onset": "January 2022",
       "evidence": [
         {
           "note_id": "text_5",
@@ -485,39 +404,11 @@
       ]
     },
     {
-      "condition_name": "Infiltrate",
-      "category": "pulmonary",
-      "subcategory": "obstructive",
-      "status": "suspected",
-      "onset": null,
-      "evidence": [
-        {
-          "note_id": "text_5",
-          "line_no": 111,
-          "span": "infiltrate cannot be definitively ruled "
-        }
-      ]
-    },
-    {
-      "condition_name": "Atelectasis",
-      "category": "pulmonary",
-      "subcategory": "obstructive",
-      "status": "suspected",
-      "onset": null,
-      "evidence": [
-        {
-          "note_id": "text_5",
-          "line_no": 107,
-          "span": "Atelectasis?"
-        }
-      ]
-    },
-    {
       "condition_name": "Cardiomegaly",
       "category": "cardiovascular",
       "subcategory": "structural",
       "status": "active",
-      "onset": "January 23, 2022",
+      "onset": "January 2022",
       "evidence": [
         {
           "note_id": "text_5",
@@ -527,25 +418,11 @@
       ]
     },
     {
-      "condition_name": "Urinary Tract Infection",
-      "category": "infectious",
-      "subcategory": "bacterial",
-      "status": "suspected",
-      "onset": "January 11, 2022",
-      "evidence": [
-        {
-          "note_id": "text_5",
-          "line_no": 166,
-          "span": "A low colony count typically does not su"
-        }
-      ]
-    },
-    {
       "condition_name": "OSAS",
       "category": "pulmonary",
       "subcategory": "obstructive",
       "status": "active",
-      "onset": null,
+      "onset": "unknown",
       "evidence": [
         {
           "note_id": "text_6",
@@ -556,6 +433,25 @@
           "note_id": "text_7",
           "line_no": 36,
           "span": "OSAS with CPAP incompliance"
+        }
+      ]
+    },
+    {
+      "condition_name": "Alcohol abuse",
+      "category": "toxicological",
+      "subcategory": "environmental_exposure",
+      "status": "active",
+      "onset": "unknown",
+      "evidence": [
+        {
+          "note_id": "text_6",
+          "line_no": 44,
+          "span": "Liver cirrhosis with alcohol abuse"
+        },
+        {
+          "note_id": "text_7",
+          "line_no": 38,
+          "span": "Liver cirrhosis with alcohol abuse"
         }
       ]
     }

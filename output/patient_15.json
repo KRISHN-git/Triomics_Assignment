@@ -45,7 +45,7 @@
       "category": "metabolic_endocrine",
       "subcategory": "nutritional_deficiency",
       "status": "active",
-      "onset": "2013",
+      "onset": "January 2013",
       "evidence": [
         {
           "note_id": "text_1",
@@ -84,7 +84,7 @@
       "category": "metabolic_endocrine",
       "subcategory": "nutritional_deficiency",
       "status": "active",
-      "onset": "unknown",
+      "onset": "July 1979",
       "evidence": [
         {
           "note_id": "text_1",
@@ -118,7 +118,7 @@
       "category": "gastrointestinal",
       "subcategory": "lower_gi",
       "status": "resolved",
-      "onset": "unknown",
+      "onset": "July 1979",
       "evidence": [
         {
           "note_id": "text_1",
@@ -152,7 +152,7 @@
       "category": "musculoskeletal",
       "subcategory": "fracture",
       "status": "resolved",
-      "onset": "unknown",
+      "onset": "July 1979",
       "evidence": [
         {
           "note_id": "text_1",
@@ -167,7 +167,7 @@
         {
           "note_id": "text_3",
           "line_no": 28,
-          "span": "elbow fracture left arm"
+          "span": "elbow fracture"
         },
         {
           "note_id": "text_4",
@@ -205,7 +205,7 @@
         },
         {
           "note_id": "text_4",
-          "line_no": 37,
+          "line_no": 36,
           "span": "hyperbilirubinemia"
         },
         {
@@ -220,7 +220,7 @@
       "category": "gastrointestinal",
       "subcategory": "hepatic",
       "status": "resolved",
-      "onset": "unknown",
+      "onset": "July 1979",
       "evidence": [
         {
           "note_id": "text_1",
@@ -236,10 +236,10 @@
     },
     {
       "condition_name": "Myopic astigmatism",
-      "category": "neurological",
-      "subcategory": "functional",
+      "category": "gastrointestinal",
+      "subcategory": "lower_gi",
       "status": "resolved",
-      "onset": "unknown",
+      "onset": "July 1979",
       "evidence": [
         {
           "note_id": "text_1",
@@ -254,7 +254,7 @@
         {
           "note_id": "text_3",
           "line_no": 56,
-          "span": "mild myopic astigmatism"
+          "span": "myopic astigmatism"
         },
         {
           "note_id": "text_4",
@@ -269,58 +269,11 @@
       ]
     },
     {
-      "condition_name": "Amnion infection syndrome",
-      "category": "infectious",
-      "subcategory": "bacterial",
-      "status": "resolved",
-      "onset": "July 1979",
-      "evidence": [
-        {
-          "note_id": "text_4",
-          "line_no": 36,
-          "span": "amnion infection syndrome"
-        }
-      ]
-    },
-    {
-      "condition_name": "Gallbladder stones",
-      "category": "gastrointestinal",
-      "subcategory": "biliary",
-      "status": "active",
-      "onset": "unknown",
-      "evidence": [
-        {
-          "note_id": "text_5",
-          "line_no": 190,
-          "span": "Gallbladder stones persist"
-        },
-        {
-          "note_id": "text_5",
-          "line_no": 216,
-          "span": "gallbladder stones"
-        }
-      ]
-    },
-    {
-      "condition_name": "Liver Enlargement",
-      "category": "gastrointestinal",
-      "subcategory": "hepatic",
-      "status": "active",
-      "onset": "unknown",
-      "evidence": [
-        {
-          "note_id": "text_5",
-          "line_no": 201,
-          "span": "liver enlargement"
-        }
-      ]
-    },
-    {
       "condition_name": "Latent hypothyroidism",
       "category": "metabolic_endocrine",
       "subcategory": "thyroid",
-      "status": "active",
-      "onset": "unknown",
+      "status": "resolved",
+      "onset": "July 1979",
       "evidence": [
         {
           "note_id": "text_3",
@@ -330,11 +283,44 @@
       ]
     },
     {
+      "condition_name": "Gallbladder stones",
+      "category": "gastrointestinal",
+      "subcategory": "biliary",
+      "status": "active",
+      "onset": "July 1979",
+      "evidence": [
+        {
+          "note_id": "text_5",
+          "line_no": 190,
+          "span": "Gallbladder stones persist"
+        },
+        {
+          "note_id": "text_5",
+          "line_no": 216,
+          "span": "Gallbladder stones persist"
+        }
+      ]
+    },
+    {
+      "condition_name": "Liver Enlargement",
+      "category": "gastrointestinal",
+      "subcategory": "hepatic",
+      "status": "active",
+      "onset": "July 1979",
+      "evidence": [
+        {
+          "note_id": "text_5",
+          "line_no": 201,
+          "span": "Minimal liver enlargement"
+        }
+      ]
+    },
+    {
       "condition_name": "Bronchopneumonia",
       "category": "pulmonary",
       "subcategory": "obstructive",
       "status": "active",
-      "onset": "April 2009",
+      "onset": "July 1979",
       "evidence": [
         {
           "note_id": "text_0",
@@ -353,12 +339,12 @@
       "category": "neurological",
       "subcategory": "functional",
       "status": "active",
-      "onset": "unknown",
+      "onset": "July 1979",
       "evidence": [
         {
           "note_id": "text_0",
           "line_no": 143,
-          "span": "Short-term retention of information"
+          "span": "short-term retention of information"
         }
       ]
     },
@@ -367,26 +353,12 @@
       "category": "neurological",
       "subcategory": "functional",
       "status": "active",
-      "onset": "unknown",
+      "onset": "July 1979",
       "evidence": [
         {
           "note_id": "text_0",
           "line_no": 149,
           "span": "limited attention"
-        }
-      ]
-    },
-    {
-      "condition_name": "Reduced Information Processing Speed",
-      "category": "neurological",
-      "subcategory": "functional",
-      "status": "active",
-      "onset": "unknown",
-      "evidence": [
-        {
-          "note_id": "text_0",
-          "line_no": 139,
-          "span": "Information processing speed"
         }
       ]
     }

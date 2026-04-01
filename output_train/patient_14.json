@@ -6,7 +6,7 @@
       "category": "cancer",
       "subcategory": "primary_malignancy",
       "status": "active",
-      "onset": "2022",
+      "onset": "May 1953",
       "evidence": [
         {
           "note_id": "text_0",
@@ -16,7 +16,7 @@
         {
           "note_id": "text_1",
           "line_no": 6,
-          "span": "Soft tissue tumor of the right proximal "
+          "span": "Soft tissue tumor of the right proximal thigh"
         },
         {
           "note_id": "text_1",
@@ -31,12 +31,12 @@
         {
           "note_id": "text_1",
           "line_no": 170,
-          "span": "Suspected liposarcoma"
+          "span": "Suspected liposarcoma of the right proximal thigh"
         },
         {
           "note_id": "text_1",
           "line_no": 186,
-          "span": "myxoid liposarcoma"
+          "span": "myxoid liposarcoma of the right adductor compartment"
         },
         {
           "note_id": "text_1",
@@ -51,17 +51,12 @@
         {
           "note_id": "text_2",
           "line_no": 9,
-          "span": "Myxoid liposarcoma on the right medial t"
+          "span": "Myxoid liposarcoma on the right medial thigh"
         },
         {
           "note_id": "text_2",
           "line_no": 129,
           "span": "myxoid liposarcoma"
-        },
-        {
-          "note_id": "text_2",
-          "line_no": 164,
-          "span": "Liposarcoma of the thigh"
         },
         {
           "note_id": "text_3",
@@ -77,11 +72,20 @@
           "note_id": "text_5",
           "line_no": 7,
           "span": "Myxoid liposarcoma, right medial thigh"
-        },
+        }
+      ]
+    },
+    {
+      "condition_name": "Pulmonary metastasis from myxoid liposarcoma",
+      "category": "cancer",
+      "subcategory": "metastasis",
+      "status": "active",
+      "onset": "2022",
+      "evidence": [
         {
           "note_id": "text_6",
           "line_no": 7,
-          "span": "Myxoid liposarcoma, right medial thigh"
+          "span": "Pulmonary Metastasis from Myxoid Liposarcoma"
         },
         {
           "note_id": "text_6",
@@ -95,7 +99,7 @@
       "category": "cardiovascular",
       "subcategory": "hypertensive",
       "status": "active",
-      "onset": null,
+      "onset": "May 1953",
       "evidence": [
         {
           "note_id": "text_1",
@@ -134,7 +138,7 @@
       "category": "metabolic_endocrine",
       "subcategory": "diabetes",
       "status": "active",
-      "onset": null,
+      "onset": "May 1953",
       "evidence": [
         {
           "note_id": "text_1",
@@ -159,7 +163,7 @@
         {
           "note_id": "text_5",
           "line_no": 20,
-          "span": "Non-insulin-dependent diabetes mellitus "
+          "span": "Non-insulin-dependent diabetes mellitus (NIDDM)"
         },
         {
           "note_id": "text_6",
@@ -173,22 +177,22 @@
       "category": "cardiovascular",
       "subcategory": "coronary",
       "status": "active",
-      "onset": null,
+      "onset": "May 1953",
       "evidence": [
         {
           "note_id": "text_1",
           "line_no": 14,
-          "span": "Coronary artery disease with stent place"
+          "span": "Coronary artery disease with stent placement"
         },
         {
           "note_id": "text_2",
           "line_no": 20,
-          "span": "Coronary artery disease with stent place"
+          "span": "Coronary artery disease with stent placement"
         },
         {
           "note_id": "text_3",
           "line_no": 22,
-          "span": "Coronary artery disease with stent place"
+          "span": "Coronary artery disease with stent placement"
         },
         {
           "note_id": "text_4",
@@ -198,7 +202,7 @@
         {
           "note_id": "text_5",
           "line_no": 22,
-          "span": "Coronary artery disease (CAD) with stent"
+          "span": "Coronary artery disease (CAD) with stent placement"
         },
         {
           "note_id": "text_6",
@@ -212,7 +216,7 @@
       "category": "toxicological",
       "subcategory": "environmental_exposure",
       "status": "active",
-      "onset": null,
+      "onset": "May 1953",
       "evidence": [
         {
           "note_id": "text_1",
@@ -251,7 +255,7 @@
       "category": "neurological",
       "subcategory": "cerebrovascular",
       "status": "resolved",
-      "onset": null,
+      "onset": "May 1953",
       "evidence": [
         {
           "note_id": "text_1",
@@ -290,7 +294,7 @@
       "category": "neurological",
       "subcategory": "functional",
       "status": "resolved",
-      "onset": null,
+      "onset": "May 1953",
       "evidence": [
         {
           "note_id": "text_1",
@@ -325,45 +329,11 @@
       ]
     },
     {
-      "condition_name": "Right hip replacement",
-      "category": "musculoskeletal",
-      "subcategory": "degenerative",
-      "status": "resolved",
-      "onset": null,
-      "evidence": [
-        {
-          "note_id": "text_1",
-          "line_no": 24,
-          "span": "Status post right hip total hip replacement"
-        },
-        {
-          "note_id": "text_2",
-          "line_no": 30,
-          "span": "Status post right hip total hip replacement"
-        },
-        {
-          "note_id": "text_3",
-          "line_no": 32,
-          "span": "Status post right hip total hip replacement"
-        },
-        {
-          "note_id": "text_4",
-          "line_no": 32,
-          "span": "Status post right hip total"
-        },
-        {
-          "note_id": "text_5",
-          "line_no": 32,
-          "span": "Status post right hip total hip replacement"
-        }
-      ]
-    },
-    {
       "condition_name": "Polyposis coli",
       "category": "gastrointestinal",
       "subcategory": "lower_gi",
       "status": "resolved",
-      "onset": null,
+      "onset": "May 1953",
       "evidence": [
         {
           "note_id": "text_1",
@@ -378,22 +348,22 @@
         {
           "note_id": "text_3",
           "line_no": 34,
-          "span": "Status post Polypectomy for polyposis co"
+          "span": "Status post Polypectomy for polyposis coli"
         },
         {
           "note_id": "text_4",
           "line_no": 34,
-          "span": "Status post Polypectomy for polyposis"
+          "span": "Status post Polypectomy for"
         },
         {
           "note_id": "text_5",
           "line_no": 34,
-          "span": "Status post Polypectomy for polyposis co"
+          "span": "Status post Polypectomy for polyposis coli"
         },
         {
           "note_id": "text_6",
           "line_no": 38,
-          "span": "Status post Polypectomy for polyposis co"
+          "span": "Status post Polypectomy for polyposis coli"
         }
       ]
     },
@@ -402,7 +372,7 @@
       "category": "gastrointestinal",
       "subcategory": "lower_gi",
       "status": "resolved",
-      "onset": null,
+      "onset": "May 1953",
       "evidence": [
         {
           "note_id": "text_1",
@@ -441,7 +411,7 @@
       "category": "neurological",
       "subcategory": "functional",
       "status": "active",
-      "onset": null,
+      "onset": "May 1953",
       "evidence": [
         {
           "note_id": "text_1",
@@ -480,7 +450,7 @@
       "category": "pulmonary",
       "subcategory": "structural",
       "status": "active",
-      "onset": null,
+      "onset": "May 1953",
       "evidence": [
         {
           "note_id": "text_2",
@@ -494,7 +464,7 @@
       "category": "cardiovascular",
       "subcategory": "coronary",
       "status": "active",
-      "onset": null,
+      "onset": "May 1953",
       "evidence": [
         {
           "note_id": "text_2",
@@ -504,30 +474,16 @@
       ]
     },
     {
-      "condition_name": "Atherosclerosis of Abdominal Aorta",
+      "condition_name": "Left Ventricular Enlargement",
       "category": "cardiovascular",
-      "subcategory": "vascular",
+      "subcategory": "structural",
       "status": "active",
-      "onset": null,
+      "onset": "May 1953",
       "evidence": [
         {
           "note_id": "text_2",
-          "line_no": 198,
-          "span": "advanced atherosclerosis of the abdominal aorta"
-        }
-      ]
-    },
-    {
-      "condition_name": "Stenosis of Left External Iliac Artery",
-      "category": "cardiovascular",
-      "subcategory": "vascular",
-      "status": "resolved",
-      "onset": null,
-      "evidence": [
-        {
-          "note_id": "text_2",
-          "line_no": 199,
-          "span": "history of stenting of the left external iliac artery"
+          "line_no": 182,
+          "span": "enlargement of the left ventricle"
         }
       ]
     },
@@ -536,7 +492,7 @@
       "category": "renal",
       "subcategory": "structural",
       "status": "active",
-      "onset": null,
+      "onset": "May 1953",
       "evidence": [
         {
           "note_id": "text_2",
@@ -550,7 +506,7 @@
       "category": "musculoskeletal",
       "subcategory": "degenerative",
       "status": "active",
-      "onset": null,
+      "onset": "May 1953",
       "evidence": [
         {
           "note_id": "text_0",
@@ -561,20 +517,6 @@
           "note_id": "text_2",
           "line_no": 202,
           "span": "Degenerative changes in the spine"
-        }
-      ]
-    },
-    {
-      "condition_name": "Wound Healing Disorder",
-      "category": "gastrointestinal",
-      "subcategory": "functional_gi",
-      "status": "active",
-      "onset": null,
-      "evidence": [
-        {
-          "note_id": "text_2",
-          "line_no": 137,
-          "span": "wound healing disorder"
         }
       ]
     }

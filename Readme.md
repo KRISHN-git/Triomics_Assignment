@@ -49,6 +49,10 @@ OPENAI_MODEL=llama-3.3-70b-versatile
 ## Run
 
 ```bash
+For training data:
+python main.py --data-dir ./data/train --patient-list ./patients_train.json --output-dir ./output_train --verbose --skip-done
+
+For Dev data:
 python main.py --data-dir ./data/dev --patient-list ./patients.json --output-dir ./output --verbose
 ```
 ```bash
@@ -63,7 +67,7 @@ If "Too many requests" error occurs, then:
 2. Update .env file.
 3. Run the script again with --skip at the end.
 
- - python main.py --data-dir ./data/dev --patient-list ./patients.json --output-dir ./output --verbose --skip-done
+python main.py --data-dir ./data/dev --patient-list ./patients.json --output-dir ./output --verbose --skip-done
 ```
 
 ---

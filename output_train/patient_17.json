@@ -6,12 +6,12 @@
       "category": "pulmonary",
       "subcategory": "acute_respiratory",
       "status": "active",
-      "onset": "09/28/2021",
+      "onset": "09/24/2021",
       "evidence": [
         {
           "note_id": "text_0",
           "line_no": 7,
-          "span": "ARDS in the context of a COVID-19 infect"
+          "span": "ARDS in the context of a COVID-19 infection"
         },
         {
           "note_id": "text_1",
@@ -19,18 +19,33 @@
           "span": "ARDS due to COVID-19 pneumonia"
         },
         {
+          "note_id": "text_2",
+          "line_no": 9,
+          "span": "COVID-19 with severe ARDS"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 8,
+          "span": "COVID-19 with severe ARDS"
+        },
+        {
           "note_id": "text_3",
           "line_no": 134,
           "span": "ARDS therapy"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 16,
+          "span": "COVID-19 with severe ARDS"
         }
       ]
     },
     {
       "condition_name": "Retinal central serous chorioretinopathy",
       "category": "neurological",
-      "subcategory": "degenerative",
+      "subcategory": "functional",
       "status": "resolved",
-      "onset": null,
+      "onset": "unknown",
       "evidence": [
         {
           "note_id": "text_0",
@@ -40,17 +55,17 @@
         {
           "note_id": "text_1",
           "line_no": 11,
-          "span": "suggestive of a history of retinal centr"
+          "span": "suggestive of a history of retinal central serous chorioretinopathy"
         },
         {
           "note_id": "text_2",
           "line_no": 35,
-          "span": "Left eye pigment epithelium clumping, su"
+          "span": "Left eye pigment epithelium clumping, suggestive of a history of retinal central"
         },
         {
           "note_id": "text_3",
           "line_no": 36,
-          "span": "Left eye pigment epithelium clumping, su"
+          "span": "Left eye pigment epithelium clumping, suggestive of a history of retinal central"
         },
         {
           "note_id": "text_4",
@@ -62,9 +77,9 @@
     {
       "condition_name": "Uveitis",
       "category": "neurological",
-      "subcategory": "degenerative",
+      "subcategory": "functional",
       "status": "active",
-      "onset": null,
+      "onset": "unknown",
       "evidence": [
         {
           "note_id": "text_0",
@@ -87,6 +102,11 @@
           "span": "Uveitis"
         },
         {
+          "note_id": "text_3",
+          "line_no": 325,
+          "span": "Uveitis"
+        },
+        {
           "note_id": "text_4",
           "line_no": 49,
           "span": "Uveitis"
@@ -98,7 +118,7 @@
       "category": "pulmonary",
       "subcategory": "obstructive",
       "status": "active",
-      "onset": null,
+      "onset": "unknown",
       "evidence": [
         {
           "note_id": "text_0",
@@ -137,7 +157,7 @@
         {
           "note_id": "text_3",
           "line_no": 317,
-          "span": "Mildly elevated blood pressure (hyperten"
+          "span": "hypertension"
         },
         {
           "note_id": "text_4",
@@ -165,6 +185,11 @@
         },
         {
           "note_id": "text_3",
+          "line_no": 124,
+          "span": "Depressed mood"
+        },
+        {
+          "note_id": "text_3",
           "line_no": 421,
           "span": "known depression"
         },
@@ -179,27 +204,27 @@
       "condition_name": "Atypical pneumonia",
       "category": "pulmonary",
       "subcategory": "obstructive",
-      "status": "active",
-      "onset": "09/30/2021",
+      "status": "suspected",
+      "onset": "unknown",
       "evidence": [
         {
           "note_id": "text_0",
           "line_no": 66,
-          "span": "radiological suspicion of atypical pneum"
+          "span": "radiological suspicion of atypical pneumonia"
         }
       ]
     },
     {
-      "condition_name": "Bilateral interstitial pneumonia",
+      "condition_name": "Interstitial pneumonia",
       "category": "pulmonary",
       "subcategory": "structural",
       "status": "active",
-      "onset": "09/28/2021",
+      "onset": "unknown",
       "evidence": [
         {
           "note_id": "text_0",
           "line_no": 28,
-          "span": "bilateral interstitial pneumonia with CO"
+          "span": "bilateral interstitial pneumonia"
         }
       ]
     },
@@ -212,8 +237,8 @@
       "evidence": [
         {
           "note_id": "text_1",
-          "line_no": 25,
-          "span": "confirmed SARS-CoV-2 infection"
+          "line_no": 6,
+          "span": "ARDS due to COVID-19 pneumonia"
         },
         {
           "note_id": "text_2",
@@ -244,20 +269,20 @@
     },
     {
       "condition_name": "Pulmonary superinfection",
-      "category": "pulmonary",
-      "subcategory": "obstructive",
+      "category": "infectious",
+      "subcategory": "bacterial",
       "status": "active",
-      "onset": null,
+      "onset": "unknown",
       "evidence": [
         {
           "note_id": "text_2",
           "line_no": 22,
-          "span": "Pulmonary superinfection with detection "
+          "span": "Pulmonary superinfection with detection of Aspergillus fumigatus"
         },
         {
           "note_id": "text_3",
           "line_no": 23,
-          "span": "Pulmonary superinfection with detection "
+          "span": "Pulmonary superinfection with detection of Aspergillus fumigatus"
         },
         {
           "note_id": "text_4",
@@ -276,12 +301,12 @@
         {
           "note_id": "text_2",
           "line_no": 26,
-          "span": "Bacteremia with detection of Staphylococ"
+          "span": "Bacteremia with detection of Staphylococcus aureus"
         },
         {
           "note_id": "text_3",
           "line_no": 27,
-          "span": "Bacteremia with detection of Staphylococ"
+          "span": "Bacteremia with detection of Staphylococcus aureus"
         },
         {
           "note_id": "text_4",
@@ -295,7 +320,7 @@
       "category": "cardiovascular",
       "subcategory": "vascular",
       "status": "active",
-      "onset": null,
+      "onset": "unknown",
       "evidence": [
         {
           "note_id": "text_2",
@@ -319,7 +344,7 @@
       "category": "musculoskeletal",
       "subcategory": "connective_tissue_disorder",
       "status": "active",
-      "onset": null,
+      "onset": "unknown",
       "evidence": [
         {
           "note_id": "text_1",
@@ -353,7 +378,7 @@
       "category": "infectious",
       "subcategory": "fungal",
       "status": "active",
-      "onset": null,
+      "onset": "unknown",
       "evidence": [
         {
           "note_id": "text_2",
@@ -363,45 +388,55 @@
         {
           "note_id": "text_3",
           "line_no": 138,
-          "span": "Aspergillus in tracheobronchial secretio"
-        },
-        {
-          "note_id": "text_3",
-          "line_no": 257,
-          "span": "Aspergillosis"
+          "span": "detection of Aspergillus"
         },
         {
           "note_id": "text_3",
           "line_no": 367,
-          "span": "Aspergillus and pneumonia"
+          "span": "Aspergillus"
         }
       ]
     },
     {
-      "condition_name": "Delirium",
-      "category": "neurological",
-      "subcategory": "functional",
+      "condition_name": "Aspergillus",
+      "category": "infectious",
+      "subcategory": "fungal",
       "status": "active",
-      "onset": null,
+      "onset": "10/07/2021",
       "evidence": [
         {
           "note_id": "text_2",
-          "line_no": 115,
-          "span": "delirium symptoms"
+          "line_no": 22,
+          "span": "Pulmonary superinfection with detection of Aspergillus fumigatus"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 138,
+          "span": "detection of Aspergillus"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 367,
+          "span": "Aspergillus"
         }
       ]
     },
     {
       "condition_name": "Dysphagia",
-      "category": "gastrointestinal",
-      "subcategory": "functional_gi",
+      "category": "neurological",
+      "subcategory": "functional",
       "status": "active",
-      "onset": null,
+      "onset": "unknown",
       "evidence": [
         {
           "note_id": "text_2",
+          "line_no": 115,
+          "span": "Delirium symptoms"
+        },
+        {
+          "note_id": "text_2",
           "line_no": 118,
-          "span": "severe dysphagia"
+          "span": "Severe dysphagia"
         },
         {
           "note_id": "text_3",
@@ -420,7 +455,7 @@
       "category": "cardiovascular",
       "subcategory": "vascular",
       "status": "active",
-      "onset": null,
+      "onset": "unknown",
       "evidence": [
         {
           "note_id": "text_3",
@@ -430,86 +465,11 @@
       ]
     },
     {
-      "condition_name": "Painful erythema",
-      "category": "cardiovascular",
-      "subcategory": "inflammatory_vascular",
-      "status": "active",
-      "onset": null,
-      "evidence": [
-        {
-          "note_id": "text_3",
-          "line_no": 152,
-          "span": "painful erythema"
-        }
-      ]
-    },
-    {
-      "condition_name": "Post-COVID myocarditis",
-      "category": "cardiovascular",
-      "subcategory": "inflammatory_vascular",
-      "status": "suspected",
-      "onset": null,
-      "evidence": [
-        {
-          "note_id": "text_3",
-          "line_no": 399,
-          "span": "post-COVID myocarditis"
-        }
-      ]
-    },
-    {
-      "condition_name": "Congenital cyst",
-      "category": "gastrointestinal",
-      "subcategory": "hepatic",
-      "status": "active",
-      "onset": null,
-      "evidence": [
-        {
-          "note_id": "text_3",
-          "line_no": 301,
-          "span": "congenital cyst"
-        },
-        {
-          "note_id": "text_3",
-          "line_no": 417,
-          "span": "congenital liver cyst"
-        }
-      ]
-    },
-    {
-      "condition_name": "Heart Failure",
-      "category": "cardiovascular",
-      "subcategory": "structural",
-      "status": "active",
-      "onset": null,
-      "evidence": [
-        {
-          "note_id": "text_3",
-          "line_no": 402,
-          "span": "heart failure"
-        }
-      ]
-    },
-    {
-      "condition_name": "Catheter-associated Infection",
-      "category": "infectious",
-      "subcategory": "bacterial",
-      "status": "resolved",
-      "onset": "10/20/21",
-      "evidence": [
-        {
-          "note_id": "text_3",
-          "line_no": 410,
-          "span": "catheter-associated"
-        }
-      ]
-    },
-    {
       "condition_name": "CIP/CIM",
       "category": "neurological",
       "subcategory": "functional",
       "status": "active",
-      "onset": null,
+      "onset": "unknown",
       "evidence": [
         {
           "note_id": "text_3",
@@ -523,7 +483,7 @@
       "category": "neurological",
       "subcategory": "functional",
       "status": "active",
-      "onset": null,
+      "onset": "unknown",
       "evidence": [
         {
           "note_id": "text_3",
@@ -533,67 +493,11 @@
       ]
     },
     {
-      "condition_name": "Post-Intensive-Care Syndrome",
-      "category": "neurological",
-      "subcategory": "functional",
-      "status": "suspected",
-      "onset": null,
-      "evidence": [
-        {
-          "note_id": "text_4",
-          "line_no": 6,
-          "span": "Post-Intensive-Care Syndrome"
-        }
-      ]
-    },
-    {
-      "condition_name": "ICU-acquired weakness",
-      "category": "musculoskeletal",
-      "subcategory": "connective_tissue_disorder",
-      "status": "suspected",
-      "onset": null,
-      "evidence": [
-        {
-          "note_id": "text_4",
-          "line_no": 104,
-          "span": "ICU-acquired weakness"
-        }
-      ]
-    },
-    {
-      "condition_name": "SARS-CoV-2 infection",
-      "category": "infectious",
-      "subcategory": "viral",
-      "status": "resolved",
-      "onset": "09/30/2021",
-      "evidence": [
-        {
-          "note_id": "text_1",
-          "line_no": 25,
-          "span": "confirmed SARS-CoV-2 infection"
-        }
-      ]
-    },
-    {
-      "condition_name": "Aspergillosis",
-      "category": "infectious",
-      "subcategory": "fungal",
-      "status": "resolved",
-      "onset": null,
-      "evidence": [
-        {
-          "note_id": "text_3",
-          "line_no": 257,
-          "span": "Aspergillosis"
-        }
-      ]
-    },
-    {
       "condition_name": "COVID pneumonia",
       "category": "pulmonary",
       "subcategory": "obstructive",
       "status": "resolved",
-      "onset": null,
+      "onset": "unknown",
       "evidence": [
         {
           "note_id": "text_3",
@@ -604,6 +508,132 @@
           "note_id": "text_3",
           "line_no": 366,
           "span": "COVID pneumonia"
+        }
+      ]
+    },
+    {
+      "condition_name": "Aspergillosis",
+      "category": "infectious",
+      "subcategory": "fungal",
+      "status": "resolved",
+      "onset": "unknown",
+      "evidence": [
+        {
+          "note_id": "text_3",
+          "line_no": 257,
+          "span": "Aspergillosis"
+        }
+      ]
+    },
+    {
+      "condition_name": "Hypertension",
+      "category": "cardiovascular",
+      "subcategory": "hypertensive",
+      "status": "active",
+      "onset": "05/2021",
+      "evidence": [
+        {
+          "note_id": "text_3",
+          "line_no": 317,
+          "span": "hypertension"
+        }
+      ]
+    },
+    {
+      "condition_name": "Post-COVID myocarditis",
+      "category": "cardiovascular",
+      "subcategory": "inflammatory_vascular",
+      "status": "suspected",
+      "onset": "unknown",
+      "evidence": [
+        {
+          "note_id": "text_3",
+          "line_no": 399,
+          "span": "post-COVID myocarditis"
+        }
+      ]
+    },
+    {
+      "condition_name": "Heart Failure",
+      "category": "cardiovascular",
+      "subcategory": "structural",
+      "status": "active",
+      "onset": "unknown",
+      "evidence": [
+        {
+          "note_id": "text_3",
+          "line_no": 402,
+          "span": "cautious heart failure"
+        }
+      ]
+    },
+    {
+      "condition_name": "Catheter-associated infection",
+      "category": "infectious",
+      "subcategory": "bacterial",
+      "status": "resolved",
+      "onset": "10/20/21",
+      "evidence": [
+        {
+          "note_id": "text_3",
+          "line_no": 410,
+          "span": "catheter-associated"
+        }
+      ]
+    },
+    {
+      "condition_name": "Congenital liver cyst",
+      "category": "gastrointestinal",
+      "subcategory": "hepatic",
+      "status": "active",
+      "onset": "unknown",
+      "evidence": [
+        {
+          "note_id": "text_3",
+          "line_no": 417,
+          "span": "congenital cyst"
+        }
+      ]
+    },
+    {
+      "condition_name": "QTc prolongation",
+      "category": "cardiovascular",
+      "subcategory": "rhythm",
+      "status": "active",
+      "onset": "unknown",
+      "evidence": [
+        {
+          "note_id": "text_3",
+          "line_no": 422,
+          "span": "significant QTc prolongation"
+        }
+      ]
+    },
+    {
+      "condition_name": "Post-Intensive-Care Syndrome",
+      "category": "neurological",
+      "subcategory": "functional",
+      "status": "suspected",
+      "onset": "unknown",
+      "evidence": [
+        {
+          "note_id": "text_4",
+          "line_no": 6,
+          "span": "Post-Intensive-Care Syndrome"
+        }
+      ]
+    },
+    {
+      "condition_name": "ICU-acquired weakness",
+      "category": "neurological",
+      "subcategory": "functional",
+      "status": "suspected",
+      "onset": "unknown",
+      "evidence": [
+        {
+          "note_id": "text_4",
+          "line_no": 104,
+          "span": "suspected ICU-acquired weakness"
         }
       ]
     }

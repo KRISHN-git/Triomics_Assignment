@@ -16,7 +16,22 @@
         {
           "note_id": "text_1",
           "line_no": 8,
-          "span": "Open severe traumatic brain injury"
+          "span": "open severe traumatic brain injury"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 248,
+          "span": "open skull-brain trauma"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 333,
+          "span": "severe skull-brain trauma"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 462,
+          "span": "open head injury"
         },
         {
           "note_id": "text_1",
@@ -40,22 +55,27 @@
         {
           "note_id": "text_0",
           "line_no": 12,
-          "span": "Dissection of the distal internal caroti"
+          "span": "Dissection of the distal internal carotid artery"
         },
         {
           "note_id": "text_1",
           "line_no": 11,
-          "span": "Dissection of the distal ACI on both sid"
+          "span": "Dissection of the distal ACI on both sides"
         },
         {
           "note_id": "text_1",
           "line_no": 243,
-          "span": "dissection of the distal internal caroti"
+          "span": "dissection of the distal internal carotid artery"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 400,
+          "span": "bilateral internal carotid artery dissection"
         },
         {
           "note_id": "text_1",
           "line_no": 440,
-          "span": "constant presentation of bilateral internal carotid artery dissection"
+          "span": "bilateral internal carotid artery dissection"
         }
       ]
     },
@@ -74,22 +94,17 @@
         {
           "note_id": "text_1",
           "line_no": 13,
-          "span": "Subarachnoid hemorrhage involving both h"
+          "span": "Subarachnoid hemorrhage involving both hemispheres"
         },
         {
           "note_id": "text_1",
-          "line_no": 373,
-          "span": "bilateral subarachnoid hemorrhage"
+          "line_no": 493,
+          "span": "subarachnoid hemorrhages"
         },
         {
           "note_id": "text_1",
           "line_no": 579,
-          "span": "traumatic subarachnoid hemorrhage"
-        },
-        {
-          "note_id": "text_3",
-          "line_no": 15,
-          "span": "Bilateral hemispheric subarachnoid hemor"
+          "span": "Traumatic subarachnoid hemorrhage"
         }
       ]
     },
@@ -112,13 +127,18 @@
         },
         {
           "note_id": "text_1",
-          "line_no": 282,
+          "line_no": 111,
+          "span": "history of aspiration"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 140,
           "span": "suspected pneumonia"
         },
         {
-          "note_id": "text_3",
-          "line_no": 23,
-          "span": "History of aspiration pneumonia"
+          "note_id": "text_1",
+          "line_no": 281,
+          "span": "suspected pneumonia"
         }
       ]
     },
@@ -142,357 +162,21 @@
       ]
     },
     {
-      "condition_name": "Deep vein thrombosis",
-      "category": "cardiovascular",
-      "subcategory": "vascular",
-      "status": "active",
-      "onset": "April 2017",
-      "evidence": [
-        {
-          "note_id": "text_1",
-          "line_no": 104,
-          "span": "long-segment deep vein thrombosis"
-        },
-        {
-          "note_id": "text_1",
-          "line_no": 223,
-          "span": "DVT on the right leg"
-        },
-        {
-          "note_id": "text_1",
-          "line_no": 229,
-          "span": "long-segment deep venous thrombosis"
-        }
-      ]
-    },
-    {
-      "condition_name": "Skull base fracture",
-      "category": "neurological",
-      "subcategory": "traumatic",
-      "status": "active",
-      "onset": "April 2017",
-      "evidence": [
-        {
-          "note_id": "text_1",
-          "line_no": 250,
-          "span": "skull base fracture"
-        },
-        {
-          "note_id": "text_1",
-          "line_no": 315,
-          "span": "bilateral skull base fractures"
-        },
-        {
-          "note_id": "text_1",
-          "line_no": 505,
-          "span": "Fracture of the skull base"
-        }
-      ]
-    },
-    {
-      "condition_name": "Maxillary fracture",
+      "condition_name": "Distal radius fracture",
       "category": "musculoskeletal",
       "subcategory": "fracture",
-      "status": "active",
-      "onset": "April 2017",
-      "evidence": [
-        {
-          "note_id": "text_1",
-          "line_no": 557,
-          "span": "patient with maxillary fracture"
-        }
-      ]
-    },
-    {
-      "condition_name": "Brain edema",
-      "category": "neurological",
-      "subcategory": "traumatic",
-      "status": "active",
-      "onset": "April 2017",
-      "evidence": [
-        {
-          "note_id": "text_1",
-          "line_no": 572,
-          "span": "brain edema following"
-        },
-        {
-          "note_id": "text_1",
-          "line_no": 417,
-          "span": "constant bihemispheric brain edema"
-        }
-      ]
-    },
-    {
-      "condition_name": "Subdural hematoma",
-      "category": "neurological",
-      "subcategory": "traumatic",
-      "status": "active",
-      "onset": "April 2017",
-      "evidence": [
-        {
-          "note_id": "text_1",
-          "line_no": 264,
-          "span": "subdural hematoma"
-        },
-        {
-          "note_id": "text_1",
-          "line_no": 343,
-          "span": "narrow subdural hematoma"
-        },
-        {
-          "note_id": "text_1",
-          "line_no": 431,
-          "span": "constant subdural hematoma"
-        }
-      ]
-    },
-    {
-      "condition_name": "Intracerebral bleeding",
-      "category": "neurological",
-      "subcategory": "traumatic",
       "status": "resolved",
-      "onset": null,
+      "onset": "2008",
       "evidence": [
         {
-          "note_id": "text_1",
-          "line_no": 587,
-          "span": "history of intracerebral bleeding"
-        },
-        {
-          "note_id": "text_1",
-          "line_no": 606,
-          "span": "intracerebral bleeding"
-        }
-      ]
-    },
-    {
-      "condition_name": "Rhabdomyolysis",
-      "category": "metabolic_endocrine",
-      "subcategory": "genetic_metabolic",
-      "status": "active",
-      "onset": "April 2017",
-      "evidence": [
-        {
-          "note_id": "text_1",
-          "line_no": 23,
-          "span": "Rhabdomyolysis"
-        },
-        {
-          "note_id": "text_3",
-          "line_no": 21,
-          "span": "Rhabdomyolysis"
-        }
-      ]
-    },
-    {
-      "condition_name": "Staphylococcus capitis infection",
-      "category": "infectious",
-      "subcategory": "bacterial",
-      "status": "active",
-      "onset": null,
-      "evidence": [
-        {
-          "note_id": "text_1",
-          "line_no": 142,
-          "span": "Staphylococcus capitis"
-        }
-      ]
-    },
-    {
-      "condition_name": "Enterobacter cloacae infection",
-      "category": "infectious",
-      "subcategory": "bacterial",
-      "status": "active",
-      "onset": null,
-      "evidence": [
-        {
-          "note_id": "text_1",
-          "line_no": 145,
-          "span": "Enterobacter cloacae"
-        }
-      ]
-    },
-    {
-      "condition_name": "Pseudomonas aeruginosa infection",
-      "category": "infectious",
-      "subcategory": "bacterial",
-      "status": "active",
-      "onset": null,
-      "evidence": [
-        {
-          "note_id": "text_1",
-          "line_no": 165,
-          "span": "Pseudomonas aeruginosa"
-        }
-      ]
-    },
-    {
-      "condition_name": "Abducens nerve palsy",
-      "category": "neurological",
-      "subcategory": "traumatic",
-      "status": "active",
-      "onset": null,
-      "evidence": [
-        {
-          "note_id": "text_2",
-          "line_no": 9,
-          "span": "Right abducens Nerve Palsy and Facial Ne"
-        },
-        {
-          "note_id": "text_2",
-          "line_no": 13,
-          "span": "Left Abducens Nerve Palsy"
-        },
-        {
-          "note_id": "text_3",
-          "line_no": 11,
-          "span": "Abducens nerve palsy"
-        }
-      ]
-    },
-    {
-      "condition_name": "Lagophthalmos",
-      "category": "neurological",
-      "subcategory": "traumatic",
-      "status": "active",
-      "onset": null,
-      "evidence": [
-        {
-          "note_id": "text_2",
-          "line_no": 11,
-          "span": "Lagophthalmos with corneal opacities"
-        }
-      ]
-    },
-    {
-      "condition_name": "Bilateral disc swelling",
-      "category": "neurological",
-      "subcategory": "traumatic",
-      "status": "active",
-      "onset": null,
-      "evidence": [
-        {
-          "note_id": "text_2",
-          "line_no": 16,
-          "span": "Bilateral disc swelling"
-        }
-      ]
-    },
-    {
-      "condition_name": "Left cavernous internal carotid artery aneurysm",
-      "category": "cardiovascular",
-      "subcategory": "vascular",
-      "status": "suspected",
-      "onset": null,
-      "evidence": [
-        {
-          "note_id": "text_2",
-          "line_no": 18,
-          "span": "Suspected left cavernous internal caroti"
-        },
-        {
-          "note_id": "text_3",
-          "line_no": 8,
-          "span": "Pseudoaneurysm of the cavernous left int"
-        }
-      ]
-    },
-    {
-      "condition_name": "Traumatic ICA dissection",
-      "category": "cardiovascular",
-      "subcategory": "vascular",
-      "status": "resolved",
-      "onset": null,
-      "evidence": [
-        {
-          "note_id": "text_2",
-          "line_no": 19,
-          "span": "traumatic ICA dissection"
-        },
-        {
-          "note_id": "text_3",
-          "line_no": 14,
-          "span": "Distal ICA dissection bilaterally"
-        }
-      ]
-    },
-    {
-      "condition_name": "Shunt dysfunction",
-      "category": "neurological",
-      "subcategory": "traumatic",
-      "status": "resolved",
-      "onset": null,
-      "evidence": [
-        {
-          "note_id": "text_2",
-          "line_no": 21,
-          "span": "History of shunt explantation due to dys"
-        }
-      ]
-    },
-    {
-      "condition_name": "Malresorptive hydrocephalus",
-      "category": "neurological",
-      "subcategory": "traumatic",
-      "status": "resolved",
-      "onset": null,
-      "evidence": [
-        {
-          "note_id": "text_2",
-          "line_no": 28,
-          "span": "Malresorptive hydrocephalus"
-        },
-        {
-          "note_id": "text_3",
-          "line_no": 17,
-          "span": "Malresorptive hydrocephalus"
-        }
-      ]
-    },
-    {
-      "condition_name": "Severe open head injury",
-      "category": "neurological",
-      "subcategory": "traumatic",
-      "status": "resolved",
-      "onset": null,
-      "evidence": [
-        {
-          "note_id": "text_2",
-          "line_no": 30,
-          "span": "History of severe open head injury"
-        },
-        {
-          "note_id": "text_3",
-          "line_no": 13,
-          "span": "History of severe open head trauma"
-        }
-      ]
-    },
-    {
-      "condition_name": "Skull fractures",
-      "category": "neurological",
-      "subcategory": "traumatic",
-      "status": "resolved",
-      "onset": null,
-      "evidence": [
-        {
-          "note_id": "text_2",
-          "line_no": 31,
-          "span": "multiple skull fractures"
-        }
-      ]
-    },
-    {
-      "condition_name": "Propofol infusion syndrome",
-      "category": "toxicological",
-      "subcategory": "poisoning",
-      "status": "suspected",
-      "onset": null,
-      "evidence": [
-        {
-          "note_id": "text_3",
+          "note_id": "text_0",
           "line_no": 25,
-          "span": "Suspected Propofol infusion syndrome"
+          "span": "Status post distal radius fracture"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 33,
+          "span": "Status post distal radius fracture"
         }
       ]
     },
@@ -511,21 +195,453 @@
       ]
     },
     {
-      "condition_name": "Distal radius fracture",
-      "category": "musculoskeletal",
-      "subcategory": "fracture",
-      "status": "resolved",
-      "onset": "2008",
+      "condition_name": "Deep vein thrombosis",
+      "category": "cardiovascular",
+      "subcategory": "vascular",
+      "status": "active",
+      "onset": "April 2017",
       "evidence": [
         {
-          "note_id": "text_0",
-          "line_no": 25,
-          "span": "Status post distal radius fracture"
+          "note_id": "text_1",
+          "line_no": 104,
+          "span": "long-segment deep vein thrombosis"
         },
         {
           "note_id": "text_1",
-          "line_no": 33,
-          "span": "Status post distal radius fracture"
+          "line_no": 140,
+          "span": "suspected pneumonia"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 229,
+          "span": "long-segment deep venous thrombosis"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 223,
+          "span": "DVT on the right leg"
+        }
+      ]
+    },
+    {
+      "condition_name": "Rhabdomyolysis",
+      "category": "metabolic_endocrine",
+      "subcategory": "genetic_metabolic",
+      "status": "active",
+      "onset": "April 2017",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 22,
+          "span": "Rhabdomyolysis"
+        }
+      ]
+    },
+    {
+      "condition_name": "Malresorptive hydrocephalus",
+      "category": "neurological",
+      "subcategory": "traumatic",
+      "status": "active",
+      "onset": "April 2017",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 19,
+          "span": "Malresorptive hydrocephalus"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 303,
+          "span": "malresorptive hydrocephalus"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 28,
+          "span": "Malresorptive hydrocephalus"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 17,
+          "span": "Malresorptive hydrocephalus"
+        }
+      ]
+    },
+    {
+      "condition_name": "Subdural hematoma",
+      "category": "neurological",
+      "subcategory": "cerebrovascular",
+      "status": "resolved",
+      "onset": "April 2017",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 264,
+          "span": "complete regression of subdural hematoma"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 343,
+          "span": "narrow subdural hematoma"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 307,
+          "span": "residual subdural hematoma"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 431,
+          "span": "subdural hematoma"
+        }
+      ]
+    },
+    {
+      "condition_name": "Skull base fracture",
+      "category": "neurological",
+      "subcategory": "traumatic",
+      "status": "active",
+      "onset": "April 2017",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 249,
+          "span": "skull base fracture"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 315,
+          "span": "bilateral skull base fractures"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 435,
+          "span": "skull base fracture"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 505,
+          "span": "Fracture of the skull base"
+        }
+      ]
+    },
+    {
+      "condition_name": "Maxillary fracture",
+      "category": "musculoskeletal",
+      "subcategory": "fracture",
+      "status": "active",
+      "onset": "April 2017",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 557,
+          "span": "Patient with maxillary fracture"
+        }
+      ]
+    },
+    {
+      "condition_name": "Brain edema",
+      "category": "neurological",
+      "subcategory": "traumatic",
+      "status": "active",
+      "onset": "April 2017",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 379,
+          "span": "generalized signs of cerebral edema"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 417,
+          "span": "bihemispheric brain edema"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 572,
+          "span": "Brain edema following a severe open traumatic brain injury"
+        }
+      ]
+    },
+    {
+      "condition_name": "Intracerebral bleeding",
+      "category": "neurological",
+      "subcategory": "cerebrovascular",
+      "status": "resolved",
+      "onset": "November 1994",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 587,
+          "span": "history of intracerebral bleeding"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 606,
+          "span": "history of intracerebral bleeding"
+        }
+      ]
+    },
+    {
+      "condition_name": "Infarct",
+      "category": "neurological",
+      "subcategory": "cerebrovascular",
+      "status": "active",
+      "onset": "April 2017",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 16,
+          "span": "Infarct areas in the border zone"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 269,
+          "span": "cortical infarct on the left"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 422,
+          "span": "infarct areas in the border zone"
+        }
+      ]
+    },
+    {
+      "condition_name": "Parenchymal hemorrhage",
+      "category": "neurological",
+      "subcategory": "cerebrovascular",
+      "status": "active",
+      "onset": "April 2017",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 340,
+          "span": "parenchymal hemorrhage"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 432,
+          "span": "frontal parenchymal hemorrhage"
+        }
+      ]
+    },
+    {
+      "condition_name": "Sulcal hemorrhages",
+      "category": "neurological",
+      "subcategory": "cerebrovascular",
+      "status": "active",
+      "onset": "April 2017",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 339,
+          "span": "persistent small sulcal hemorrhages"
+        }
+      ]
+    },
+    {
+      "condition_name": "Cerebral edema",
+      "category": "neurological",
+      "subcategory": "traumatic",
+      "status": "active",
+      "onset": "April 2017",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 379,
+          "span": "generalized signs of cerebral edema"
+        }
+      ]
+    },
+    {
+      "condition_name": "Transtentorial herniation",
+      "category": "neurological",
+      "subcategory": "traumatic",
+      "status": "active",
+      "onset": "April 2017",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 383,
+          "span": "transtentorial herniation"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 419,
+          "span": "transtentorial herniation"
+        }
+      ]
+    },
+    {
+      "condition_name": "Petrous part of the temporal bone fracture",
+      "category": "musculoskeletal",
+      "subcategory": "fracture",
+      "status": "active",
+      "onset": "April 2017",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 506,
+          "span": "Fracture of the petrous part of the temporal bone"
+        }
+      ]
+    },
+    {
+      "condition_name": "Abducens nerve palsy",
+      "category": "neurological",
+      "subcategory": "traumatic",
+      "status": "active",
+      "onset": "November 1994",
+      "evidence": [
+        {
+          "note_id": "text_2",
+          "line_no": 9,
+          "span": "Right abducens Nerve Palsy and Facial Nerve Palsy"
+        },
+        {
+          "note_id": "text_2",
+          "line_no": 13,
+          "span": "Left Abducens Nerve Palsy"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 11,
+          "span": "Abducens nerve palsy"
+        }
+      ]
+    },
+    {
+      "condition_name": "Lagophthalmos",
+      "category": "neurological",
+      "subcategory": "traumatic",
+      "status": "active",
+      "onset": "November 1994",
+      "evidence": [
+        {
+          "note_id": "text_2",
+          "line_no": 11,
+          "span": "Lagophthalmos with corneal opacities"
+        }
+      ]
+    },
+    {
+      "condition_name": "Bilateral disc swelling",
+      "category": "neurological",
+      "subcategory": "traumatic",
+      "status": "active",
+      "onset": "November 1994",
+      "evidence": [
+        {
+          "note_id": "text_2",
+          "line_no": 16,
+          "span": "Bilateral disc swelling"
+        }
+      ]
+    },
+    {
+      "condition_name": "Left cavernous internal carotid artery aneurysm",
+      "category": "cardiovascular",
+      "subcategory": "vascular",
+      "status": "suspected",
+      "onset": "November 1994",
+      "evidence": [
+        {
+          "note_id": "text_2",
+          "line_no": 18,
+          "span": "Suspected left cavernous internal carotid artery aneurysm"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 8,
+          "span": "Pseudoaneurysm of the cavernous left internal carotid artery"
+        }
+      ]
+    },
+    {
+      "condition_name": "Traumatic ICA dissection",
+      "category": "cardiovascular",
+      "subcategory": "vascular",
+      "status": "resolved",
+      "onset": "November 1994",
+      "evidence": [
+        {
+          "note_id": "text_2",
+          "line_no": 19,
+          "span": "traumatic ICA dissection"
+        }
+      ]
+    },
+    {
+      "condition_name": "Shunt dysfunction",
+      "category": "neurological",
+      "subcategory": "traumatic",
+      "status": "resolved",
+      "onset": "November 1994",
+      "evidence": [
+        {
+          "note_id": "text_2",
+          "line_no": 21,
+          "span": "History of shunt explantation due to dysfunction"
+        }
+      ]
+    },
+    {
+      "condition_name": "Severe open head injury",
+      "category": "neurological",
+      "subcategory": "traumatic",
+      "status": "resolved",
+      "onset": "November 1994",
+      "evidence": [
+        {
+          "note_id": "text_2",
+          "line_no": 30,
+          "span": "History of severe open head injury"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 13,
+          "span": "History of severe open head trauma"
+        }
+      ]
+    },
+    {
+      "condition_name": "Skull fractures",
+      "category": "neurological",
+      "subcategory": "traumatic",
+      "status": "resolved",
+      "onset": "November 1994",
+      "evidence": [
+        {
+          "note_id": "text_2",
+          "line_no": 31,
+          "span": "multiple skull fractures"
+        }
+      ]
+    },
+    {
+      "condition_name": "Subarachnoid hemorrhage",
+      "category": "neurological",
+      "subcategory": "cerebrovascular",
+      "status": "resolved",
+      "onset": "November 1994",
+      "evidence": [
+        {
+          "note_id": "text_3",
+          "line_no": 15,
+          "span": "Bilateral hemispheric subarachnoid hemorrhage"
+        }
+      ]
+    },
+    {
+      "condition_name": "Aspiration pneumonia",
+      "category": "pulmonary",
+      "subcategory": "acute_respiratory",
+      "status": "resolved",
+      "onset": "November 1994",
+      "evidence": [
+        {
+          "note_id": "text_3",
+          "line_no": 23,
+          "span": "History of aspiration pneumonia"
         }
       ]
     }
