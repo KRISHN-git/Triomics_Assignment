@@ -105,8 +105,8 @@ def parse_retry_seconds(error_message: str) -> float:
     
     match = re.search(r'try again in (\d+(?:\.\d+)?)', str(error_message))
     if match:
-        return float(match.group(1)) + 2  # add 2s buffer
-    return 60.0  # default wait 60s if we can't parse
+        return float(match.group(1)) + 2
+    return 60.0
 
 
 def call_with_smart_retry(prompt: str, note_id: str, max_attempts: int = 5) -> str:
@@ -165,7 +165,6 @@ def extract_from_chunk(chunk_text: str, note_id: str) -> list:
         print(f"  Warning: JSON parse failed for chunk of {note_id}, skipping")
         return []
 
-
 def extract_from_note(note: dict) -> list:
     """
     Extracts all conditions from a note by processing 100-line chunks.
@@ -180,6 +179,7 @@ def extract_from_note(note: dict) -> list:
         if i < len(chunks) - 1:
             time.sleep(6)
 
+    
     seen_lines = set()
     unique_conditions = []
     for c in all_conditions:
@@ -191,5 +191,5 @@ def extract_from_note(note: dict) -> list:
     for c in unique_conditions:
         c["source_note_id"]      = note["note_id"]
         c["note_encounter_date"] = note["encounter_date"]
-
     return unique_conditions
+

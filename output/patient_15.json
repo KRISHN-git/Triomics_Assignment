@@ -45,7 +45,7 @@
       "category": "metabolic_endocrine",
       "subcategory": "nutritional_deficiency",
       "status": "active",
-      "onset": "January 2013",
+      "onset": "2013",
       "evidence": [
         {
           "note_id": "text_1",
@@ -84,7 +84,7 @@
       "category": "metabolic_endocrine",
       "subcategory": "nutritional_deficiency",
       "status": "active",
-      "onset": "July 1979",
+      "onset": "unknown",
       "evidence": [
         {
           "note_id": "text_1",
@@ -118,17 +118,17 @@
       "category": "gastrointestinal",
       "subcategory": "lower_gi",
       "status": "resolved",
-      "onset": "July 1979",
+      "onset": "unknown",
       "evidence": [
         {
           "note_id": "text_1",
           "line_no": 24,
-          "span": "status post appendectomy"
+          "span": "Appendectomy"
         },
         {
           "note_id": "text_2",
           "line_no": 24,
-          "span": "status post appendectomy"
+          "span": "appendectomy"
         },
         {
           "note_id": "text_3",
@@ -152,22 +152,22 @@
       "category": "musculoskeletal",
       "subcategory": "fracture",
       "status": "resolved",
-      "onset": "July 1979",
+      "onset": "unknown",
       "evidence": [
         {
           "note_id": "text_1",
           "line_no": 26,
-          "span": "status post elbow fracture"
+          "span": "Elbow fracture"
         },
         {
           "note_id": "text_2",
           "line_no": 26,
-          "span": "status post elbow fracture"
+          "span": "elbow fracture left arm"
         },
         {
           "note_id": "text_3",
           "line_no": 28,
-          "span": "elbow fracture"
+          "span": "elbow fracture left arm"
         },
         {
           "note_id": "text_4",
@@ -191,7 +191,7 @@
         {
           "note_id": "text_1",
           "line_no": 37,
-          "span": "hyperbilirubinemia"
+          "span": "Hyperbilirubinemia"
         },
         {
           "note_id": "text_2",
@@ -201,12 +201,12 @@
         {
           "note_id": "text_3",
           "line_no": 37,
-          "span": "hyperbilirubinemia"
+          "span": "Hyperbilirubinemia"
         },
         {
           "note_id": "text_4",
-          "line_no": 36,
-          "span": "hyperbilirubinemia"
+          "line_no": 37,
+          "span": "Hyperbilirubinemia"
         },
         {
           "note_id": "text_5",
@@ -220,12 +220,12 @@
       "category": "gastrointestinal",
       "subcategory": "hepatic",
       "status": "resolved",
-      "onset": "July 1979",
+      "onset": "unknown",
       "evidence": [
         {
           "note_id": "text_1",
           "line_no": 38,
-          "span": "hepatopathy"
+          "span": "Hepatopathy"
         },
         {
           "note_id": "text_3",
@@ -236,15 +236,15 @@
     },
     {
       "condition_name": "Myopic astigmatism",
-      "category": "gastrointestinal",
-      "subcategory": "lower_gi",
+      "category": "neurological",
+      "subcategory": "functional",
       "status": "resolved",
-      "onset": "July 1979",
+      "onset": "unknown",
       "evidence": [
         {
           "note_id": "text_1",
           "line_no": 55,
-          "span": "mild myopic astigmatism"
+          "span": "Myopic astigmatism"
         },
         {
           "note_id": "text_2",
@@ -254,7 +254,7 @@
         {
           "note_id": "text_3",
           "line_no": 56,
-          "span": "myopic astigmatism"
+          "span": "mild myopic astigmatism"
         },
         {
           "note_id": "text_4",
@@ -269,11 +269,25 @@
       ]
     },
     {
+      "condition_name": "Amnion infection syndrome",
+      "category": "infectious",
+      "subcategory": "bacterial",
+      "status": "resolved",
+      "onset": "July 1979",
+      "evidence": [
+        {
+          "note_id": "text_4",
+          "line_no": 36,
+          "span": "amnion infection syndrome"
+        }
+      ]
+    },
+    {
       "condition_name": "Latent hypothyroidism",
       "category": "metabolic_endocrine",
       "subcategory": "thyroid",
-      "status": "resolved",
-      "onset": "July 1979",
+      "status": "active",
+      "onset": "unknown",
       "evidence": [
         {
           "note_id": "text_3",
@@ -287,7 +301,7 @@
       "category": "gastrointestinal",
       "subcategory": "biliary",
       "status": "active",
-      "onset": "July 1979",
+      "onset": "unknown",
       "evidence": [
         {
           "note_id": "text_5",
@@ -297,7 +311,7 @@
         {
           "note_id": "text_5",
           "line_no": 216,
-          "span": "Gallbladder stones persist"
+          "span": "gallbladder stones"
         }
       ]
     },
@@ -306,12 +320,12 @@
       "category": "gastrointestinal",
       "subcategory": "hepatic",
       "status": "active",
-      "onset": "July 1979",
+      "onset": "unknown",
       "evidence": [
         {
           "note_id": "text_5",
           "line_no": 201,
-          "span": "Minimal liver enlargement"
+          "span": "liver enlargement"
         }
       ]
     },
@@ -320,7 +334,7 @@
       "category": "pulmonary",
       "subcategory": "obstructive",
       "status": "active",
-      "onset": "July 1979",
+      "onset": "April 2009",
       "evidence": [
         {
           "note_id": "text_0",
@@ -335,30 +349,16 @@
       ]
     },
     {
-      "condition_name": "Impaired Working Memory",
+      "condition_name": "Brain Damage",
       "category": "neurological",
-      "subcategory": "functional",
-      "status": "active",
-      "onset": "July 1979",
+      "subcategory": "traumatic",
+      "status": "resolved",
+      "onset": "unknown",
       "evidence": [
         {
           "note_id": "text_0",
-          "line_no": 143,
-          "span": "short-term retention of information"
-        }
-      ]
-    },
-    {
-      "condition_name": "Limited Attention",
-      "category": "neurological",
-      "subcategory": "functional",
-      "status": "active",
-      "onset": "July 1979",
-      "evidence": [
-        {
-          "note_id": "text_0",
-          "line_no": 149,
-          "span": "limited attention"
+          "line_no": 127,
+          "span": "brain damage"
         }
       ]
     }

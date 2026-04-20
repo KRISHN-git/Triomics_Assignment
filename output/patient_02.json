@@ -2,10 +2,10 @@
   "patient_id": "patient_02",
   "conditions": [
     {
-      "condition_name": "Malignant melanoma",
+      "condition_name": "Malignant Melanoma",
       "category": "cancer",
       "subcategory": "primary_malignancy",
-      "status": "resolved",
+      "status": "active",
       "onset": "February 2018",
       "evidence": [
         {
@@ -30,37 +30,13 @@
         },
         {
           "note_id": "text_1",
-          "line_no": 12,
-          "span": "primary tumor"
+          "line_no": 7,
+          "span": "Metastatic malignant melanoma"
         },
-        {
-          "note_id": "text_2",
-          "line_no": 12,
-          "span": "left upper back"
-        },
-        {
-          "note_id": "text_3",
-          "line_no": 12,
-          "span": "primary tumor"
-        },
-        {
-          "note_id": "text_4",
-          "line_no": 12,
-          "span": "primary tumor"
-        }
-      ]
-    },
-    {
-      "condition_name": "Metastatic malignant melanoma",
-      "category": "cancer",
-      "subcategory": "metastasis",
-      "status": "active",
-      "onset": "2018",
-      "evidence": [
         {
           "note_id": "text_1",
-          "line_no": 7,
-          "span": "M1, stage IV"
+          "line_no": 101,
+          "span": "malignant melanoma"
         },
         {
           "note_id": "text_1",
@@ -68,19 +44,39 @@
           "span": "Metastatic malignant melanoma"
         },
         {
+          "note_id": "text_1",
+          "line_no": 210,
+          "span": "right frontal metastasis"
+        },
+        {
           "note_id": "text_2",
           "line_no": 9,
           "span": "M1, stage IV"
         },
         {
+          "note_id": "text_2",
+          "line_no": 12,
+          "span": "primary tumor"
+        },
+        {
           "note_id": "text_3",
           "line_no": 11,
-          "span": "malignant melanoma"
+          "span": "Metastatic malignant melanoma"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 172,
+          "span": "Multiple nodular soft tissue metastases"
         },
         {
           "note_id": "text_4",
           "line_no": 9,
           "span": "Metastatic malignant melanoma"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 12,
+          "span": "malignant melanoma"
         },
         {
           "note_id": "text_4",
@@ -119,8 +115,8 @@
     },
     {
       "condition_name": "Osteopenia",
-      "category": "musculoskeletal",
-      "subcategory": "degenerative",
+      "category": "metabolic_endocrine",
+      "subcategory": "genetic_metabolic",
       "status": "active",
       "onset": "February 2018",
       "evidence": [
@@ -132,7 +128,7 @@
       ]
     },
     {
-      "condition_name": "Exsiccation eczema",
+      "condition_name": "Exsiccation Eczema",
       "category": "immunological",
       "subcategory": "allergic",
       "status": "active",
@@ -141,7 +137,7 @@
         {
           "note_id": "text_1",
           "line_no": 44,
-          "span": "on the arms, legs, and face"
+          "span": "exsiccation eczema"
         },
         {
           "note_id": "text_1",
@@ -153,14 +149,14 @@
     {
       "condition_name": "Hematoma",
       "category": "hematological",
-      "subcategory": "cytopenia",
+      "subcategory": "coagulation",
       "status": "resolved",
-      "onset": "October 28, 2020",
+      "onset": "October 2020",
       "evidence": [
         {
           "note_id": "text_1",
-          "line_no": 62,
-          "span": "on the left forehead"
+          "line_no": 61,
+          "span": "hematoma on the left forehead"
         }
       ]
     },
@@ -169,7 +165,7 @@
       "category": "infectious",
       "subcategory": "bacterial",
       "status": "resolved",
-      "onset": "February 4, 2020",
+      "onset": "February 2020",
       "evidence": [
         {
           "note_id": "text_1",
@@ -215,7 +211,7 @@
       "condition_name": "Enlarged right ovary",
       "category": "gastrointestinal",
       "subcategory": "lower_gi",
-      "status": "active",
+      "status": "suspected",
       "onset": "October 2020",
       "evidence": [
         {
@@ -227,8 +223,8 @@
     },
     {
       "condition_name": "Wound Healing Disorder",
-      "category": "musculoskeletal",
-      "subcategory": "degenerative",
+      "category": "immunological",
+      "subcategory": "autoinflammatory",
       "status": "active",
       "onset": "October 2020",
       "evidence": [
@@ -240,35 +236,7 @@
       ]
     },
     {
-      "condition_name": "Empyema",
-      "category": "infectious",
-      "subcategory": "bacterial",
-      "status": "resolved",
-      "onset": "February 20",
-      "evidence": [
-        {
-          "note_id": "text_3",
-          "line_no": 17,
-          "span": "empyema"
-        }
-      ]
-    },
-    {
-      "condition_name": "Right frontal tumor",
-      "category": "cancer",
-      "subcategory": "metastasis",
-      "status": "resolved",
-      "onset": "January 20",
-      "evidence": [
-        {
-          "note_id": "text_3",
-          "line_no": 15,
-          "span": "right frontal tumor"
-        }
-      ]
-    },
-    {
-      "condition_name": "SARS-CoV2 infection",
+      "condition_name": "SARS-CoV2 Infection",
       "category": "infectious",
       "subcategory": "viral",
       "status": "active",
@@ -277,16 +245,16 @@
         {
           "note_id": "text_3",
           "line_no": 32,
-          "span": "SARS-CoV2 PCR"
+          "span": "SARS-CoV2 PCR (Nose/Throat): POSITIVE"
         }
       ]
     },
     {
-      "condition_name": "Cervical lymph node metastasis",
+      "condition_name": "Cervical Lymph Node Metastasis",
       "category": "cancer",
       "subcategory": "metastasis",
       "status": "active",
-      "onset": "January 2, 2021",
+      "onset": "January 2021",
       "evidence": [
         {
           "note_id": "text_3",
@@ -296,7 +264,7 @@
       ]
     },
     {
-      "condition_name": "Pulmonary metastases",
+      "condition_name": "Pulmonary Metastases",
       "category": "cancer",
       "subcategory": "metastasis",
       "status": "active",
@@ -310,7 +278,7 @@
       ]
     },
     {
-      "condition_name": "Cardiac metastasis",
+      "condition_name": "Cardiac Metastasis",
       "category": "cancer",
       "subcategory": "metastasis",
       "status": "suspected",
@@ -319,7 +287,7 @@
         {
           "note_id": "text_4",
           "line_no": 49,
-          "span": "2 cm mass abutting the lateral wall"
+          "span": "concerning 2 cm mass"
         },
         {
           "note_id": "text_4",
@@ -338,12 +306,17 @@
         {
           "note_id": "text_4",
           "line_no": 50,
-          "span": "lymphadenopathy with a dominant node"
+          "span": "lymphadenopathy"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 125,
+          "span": "lymph node involvement"
         }
       ]
     },
     {
-      "condition_name": "Osseous metastatic disease",
+      "condition_name": "Osseous Metastatic Disease",
       "category": "cancer",
       "subcategory": "metastasis",
       "status": "active",
@@ -351,13 +324,23 @@
       "evidence": [
         {
           "note_id": "text_4",
-          "line_no": 52,
-          "span": "lytic lesions involving the sternum"
+          "line_no": 53,
+          "span": "lytic lesions"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 69,
+          "span": "skeletal metastases"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 117,
+          "span": "metabolically active skeletal lesions"
         }
       ]
     },
     {
-      "condition_name": "Hepatic metastases",
+      "condition_name": "Hepatic Metastases",
       "category": "cancer",
       "subcategory": "metastasis",
       "status": "active",
@@ -371,7 +354,7 @@
       ]
     },
     {
-      "condition_name": "Muscular metastasis",
+      "condition_name": "Muscular Metastasis",
       "category": "cancer",
       "subcategory": "metastasis",
       "status": "active",
@@ -380,17 +363,12 @@
         {
           "note_id": "text_4",
           "line_no": 60,
-          "span": "2.5 cm mass within the left psoas muscle"
-        },
-        {
-          "note_id": "text_4",
-          "line_no": 106,
-          "span": "active muscular metastasis"
+          "span": "2.5 cm mass"
         }
       ]
     },
     {
-      "condition_name": "Skeletal metastases",
+      "condition_name": "Metastatic Disease",
       "category": "cancer",
       "subcategory": "metastasis",
       "status": "active",
@@ -398,27 +376,8 @@
       "evidence": [
         {
           "note_id": "text_4",
-          "line_no": 62,
-          "span": "lytic lesions in the left acetabulum"
-        },
-        {
-          "note_id": "text_4",
-          "line_no": 117,
-          "span": "metabolically active skeletal lesions"
-        }
-      ]
-    },
-    {
-      "condition_name": "Lymph Node Involvement",
-      "category": "cancer",
-      "subcategory": "metastasis",
-      "status": "active",
-      "onset": "February 2022",
-      "evidence": [
-        {
-          "note_id": "text_4",
-          "line_no": 125,
-          "span": "lymph node involvement"
+          "line_no": 114,
+          "span": "active metastatic disease"
         }
       ]
     },

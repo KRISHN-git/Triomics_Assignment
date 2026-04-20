@@ -15,18 +15,13 @@
         },
         {
           "note_id": "text_0",
-          "line_no": 104,
-          "span": "HCC in segment II"
-        },
-        {
-          "note_id": "text_0",
           "line_no": 390,
-          "span": "Dissiminated HCC foci"
+          "span": "Dissiminated HCC foci in all segments"
         },
         {
           "note_id": "text_0",
           "line_no": 489,
-          "span": "solid hepatic cellular carcinoma lesion"
+          "span": "A solid hepatic cellular carcinoma lesion"
         },
         {
           "note_id": "text_0",
@@ -35,8 +30,23 @@
         },
         {
           "note_id": "text_1",
-          "line_no": 10,
-          "span": "HCC"
+          "line_no": 6,
+          "span": "hepatocellular carcinoma"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 390,
+          "span": "Dissiminated HCC foci in all segments"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 489,
+          "span": "A solid hepatic cellular carcinoma lesion"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 520,
+          "span": "Hepatocellular carcinoma"
         },
         {
           "note_id": "text_2",
@@ -85,7 +95,7 @@
         {
           "note_id": "text_1",
           "line_no": 377,
-          "span": "Signs of liver cirrhosis"
+          "span": "liver cirrhosis with nodular liver parenchyma"
         },
         {
           "note_id": "text_1",
@@ -139,7 +149,7 @@
         {
           "note_id": "text_1",
           "line_no": 198,
-          "span": "variceal strands"
+          "span": "non-collapsible variceal strands"
         },
         {
           "note_id": "text_1",
@@ -149,7 +159,12 @@
         {
           "note_id": "text_1",
           "line_no": 382,
-          "span": "Varices of the esophagus"
+          "span": "varices of the esophagus and fundus"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 412,
+          "span": "residual varices"
         },
         {
           "note_id": "text_3",
@@ -183,90 +198,26 @@
       ]
     },
     {
-      "condition_name": "Osteoporosis",
-      "category": "musculoskeletal",
-      "subcategory": "degenerative",
+      "condition_name": "Anemia",
+      "category": "hematological",
+      "subcategory": "cytopenia",
       "status": "active",
       "onset": "April 1967",
       "evidence": [
         {
-          "note_id": "text_0",
-          "line_no": 72,
-          "span": "Osteoporotic features"
-        },
-        {
-          "note_id": "text_0",
-          "line_no": 113,
-          "span": "update of osteoporosis medication"
-        },
-        {
           "note_id": "text_1",
-          "line_no": 37,
-          "span": "Osteoporosis"
+          "line_no": 14,
+          "span": "Anemia requiring transfusion"
         },
         {
           "note_id": "text_3",
-          "line_no": 40,
-          "span": "Osteoporosis"
+          "line_no": 17,
+          "span": "Anemia requiring transfusion"
         },
         {
           "note_id": "text_4",
-          "line_no": 33,
-          "span": "Osteoporosis"
-        }
-      ]
-    },
-    {
-      "condition_name": "Fracture",
-      "category": "musculoskeletal",
-      "subcategory": "fracture",
-      "status": "active",
-      "onset": "April 1967",
-      "evidence": [
-        {
-          "note_id": "text_0",
-          "line_no": 74,
-          "span": "Multiple fractures"
-        },
-        {
-          "note_id": "text_0",
-          "line_no": 97,
-          "span": "Multiple, older, osteoporotic compression fractures"
-        },
-        {
-          "note_id": "text_0",
-          "line_no": 109,
-          "span": "surgical treatment of the fractures"
-        },
-        {
-          "note_id": "text_1",
-          "line_no": 25,
-          "span": "Fresh osteoporotic thoracic vertebra 8 fracture"
-        },
-        {
-          "note_id": "text_1",
-          "line_no": 113,
-          "span": "subacute cover plate compression fracture"
-        },
-        {
-          "note_id": "text_1",
-          "line_no": 311,
-          "span": "Multiple anterior endplate compression fractures"
-        },
-        {
-          "note_id": "text_1",
-          "line_no": 497,
-          "span": "old, minimally displaced fracture of the right 7th rib"
-        },
-        {
-          "note_id": "text_3",
-          "line_no": 28,
-          "span": "Fresh osteoporotic thoracic vertebra 8 fracture"
-        },
-        {
-          "note_id": "text_4",
-          "line_no": 22,
-          "span": "Osteoporotic thoracic vertebral fracture"
+          "line_no": 20,
+          "span": "Transfusion-dependent anemia"
         }
       ]
     },
@@ -284,7 +235,7 @@
         },
         {
           "note_id": "text_1",
-          "line_no": 427,
+          "line_no": 428,
           "span": "portal hypertensive gastropathy"
         },
         {
@@ -295,7 +246,7 @@
         {
           "note_id": "text_3",
           "line_no": 114,
-          "span": "portal hypertensive gastropathy"
+          "span": "Portal hypertensive gastropathy"
         }
       ]
     },
@@ -314,7 +265,7 @@
         {
           "note_id": "text_3",
           "line_no": 32,
-          "span": "Portal hypertension with bypass circuits"
+          "span": "Portal hypertension"
         },
         {
           "note_id": "text_4",
@@ -338,12 +289,7 @@
         {
           "note_id": "text_1",
           "line_no": 101,
-          "span": "with splenomegaly"
-        },
-        {
-          "note_id": "text_1",
-          "line_no": 490,
-          "span": "splenomegaly noted"
+          "span": "splenomegaly and perihepatic ascites"
         },
         {
           "note_id": "text_3",
@@ -371,8 +317,13 @@
         },
         {
           "note_id": "text_1",
+          "line_no": 235,
+          "span": "Cholelithiasis noted"
+        },
+        {
+          "note_id": "text_1",
           "line_no": 380,
-          "span": "Cholecystolithiasis"
+          "span": "cholecystolithiasis and gallbladder hydrops"
         },
         {
           "note_id": "text_3",
@@ -411,35 +362,102 @@
       ]
     },
     {
-      "condition_name": "Stroke",
-      "category": "neurological",
-      "subcategory": "cerebrovascular",
-      "status": "resolved",
-      "onset": "2016",
+      "condition_name": "Osteoporosis",
+      "category": "musculoskeletal",
+      "subcategory": "degenerative",
+      "status": "active",
+      "onset": "April 1967",
       "evidence": [
         {
-          "note_id": "text_1",
-          "line_no": 39,
-          "span": "Status post stroke"
+          "note_id": "text_0",
+          "line_no": 113,
+          "span": "update of osteoporosis medication"
         },
         {
-          "note_id": "text_3",
-          "line_no": 42,
-          "span": "Status post stroke"
+          "note_id": "text_1",
+          "line_no": 37,
+          "span": "Osteoporosis"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 458,
+          "span": "Multisegmental height reduction"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 510,
+          "span": "coxarthrosis"
         },
         {
           "note_id": "text_4",
-          "line_no": 35,
-          "span": "History of stroke"
+          "line_no": 33,
+          "span": "Osteoporosis"
+        }
+      ]
+    },
+    {
+      "condition_name": "Osteoporotic vertebral body",
+      "category": "musculoskeletal",
+      "subcategory": "degenerative",
+      "status": "active",
+      "onset": "unknown",
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 7,
+          "span": "Osteoporotic vertebral body sintering"
+        }
+      ]
+    },
+    {
+      "condition_name": "Fracture at lumbar vertebra 2",
+      "category": "musculoskeletal",
+      "subcategory": "fracture",
+      "status": "active",
+      "onset": "May 22, 2020",
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 90,
+          "span": "Fracture at the base plate of lumbar vertebra 2"
+        }
+      ]
+    },
+    {
+      "condition_name": "Fracture at thoracic vertebra 8",
+      "category": "musculoskeletal",
+      "subcategory": "fracture",
+      "status": "active",
+      "onset": "April 1967",
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 94,
+          "span": "Suspicion of new small fracture at thoracic vertebra 8"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 25,
+          "span": "Fresh osteoporotic thoracic vertebra 8 fracture"
+        },
+        {
+          "note_id": "text_3",
+          "line_no": 28,
+          "span": "Fresh osteoporotic thoracic vertebra 8 fracture"
+        },
+        {
+          "note_id": "text_4",
+          "line_no": 22,
+          "span": "Osteoporotic thoracic vertebral fracture"
         }
       ]
     },
     {
       "condition_name": "Aortic sclerosis",
       "category": "cardiovascular",
-      "subcategory": "vascular",
+      "subcategory": "structural",
       "status": "active",
-      "onset": "April 1967",
+      "onset": "unknown",
       "evidence": [
         {
           "note_id": "text_0",
@@ -463,16 +481,35 @@
       ]
     },
     {
-      "condition_name": "Pleural effusions",
+      "condition_name": "Hydrops of the gallbladder",
+      "category": "gastrointestinal",
+      "subcategory": "biliary",
+      "status": "active",
+      "onset": "unknown",
+      "evidence": [
+        {
+          "note_id": "text_0",
+          "line_no": 106,
+          "span": "Hydrops of the gallbladder"
+        },
+        {
+          "note_id": "text_1",
+          "line_no": 380,
+          "span": "cholecystolithiasis and gallbladder hydrops"
+        }
+      ]
+    },
+    {
+      "condition_name": "Pleural Effusions",
       "category": "pulmonary",
       "subcategory": "structural",
       "status": "active",
-      "onset": "April 1967",
+      "onset": "unknown",
       "evidence": [
         {
           "note_id": "text_1",
           "line_no": 383,
-          "span": "Pleural effusions on both sides"
+          "span": "pleural effusions on both sides"
         },
         {
           "note_id": "text_1",
@@ -482,16 +519,16 @@
       ]
     },
     {
-      "condition_name": "Axial hernia",
+      "condition_name": "Axial Hernia",
       "category": "musculoskeletal",
       "subcategory": "degenerative",
       "status": "active",
-      "onset": "April 1967",
+      "onset": "unknown",
       "evidence": [
         {
           "note_id": "text_1",
           "line_no": 388,
-          "span": "Axial hernia"
+          "span": "axial hernia"
         }
       ]
     },
@@ -505,7 +542,7 @@
         {
           "note_id": "text_1",
           "line_no": 496,
-          "span": "moderate coxarthrosis bilaterally"
+          "span": "Moderate coxarthrosis bilaterally"
         },
         {
           "note_id": "text_1",
@@ -524,7 +561,7 @@
         {
           "note_id": "text_1",
           "line_no": 435,
-          "span": "slight left convex scoliosis thoracolumbally"
+          "span": "Slight left convex scoliosis"
         }
       ]
     },
@@ -543,30 +580,44 @@
       ]
     },
     {
-      "condition_name": "Varicose veins",
-      "category": "cardiovascular",
-      "subcategory": "vascular",
-      "status": "active",
-      "onset": "April 1967",
+      "condition_name": "Apoplexy",
+      "category": "neurological",
+      "subcategory": "cerebrovascular",
+      "status": "resolved",
+      "onset": "unknown",
       "evidence": [
         {
-          "note_id": "text_1",
-          "line_no": 574,
-          "span": "varicose vein"
+          "note_id": "text_0",
+          "line_no": 16,
+          "span": "Status post apoplexy"
         }
       ]
     },
     {
-      "condition_name": "Facet joint arthrosis",
-      "category": "musculoskeletal",
-      "subcategory": "degenerative",
-      "status": "active",
-      "onset": "April 1967",
+      "condition_name": "Aortic Valve Stenosis",
+      "category": "cardiovascular",
+      "subcategory": "structural",
+      "status": "suspected",
+      "onset": "unknown",
       "evidence": [
         {
           "note_id": "text_1",
-          "line_no": 315,
-          "span": "Hypertrophic facet joint arthrosis"
+          "line_no": 122,
+          "span": "auscultatory suspicion of aortic valve stenosis"
+        }
+      ]
+    },
+    {
+      "condition_name": "Varicose Veins",
+      "category": "cardiovascular",
+      "subcategory": "vascular",
+      "status": "active",
+      "onset": "unknown",
+      "evidence": [
+        {
+          "note_id": "text_1",
+          "line_no": 574,
+          "span": "varicose vein status"
         }
       ]
     },
@@ -585,63 +636,16 @@
       ]
     },
     {
-      "condition_name": "Aortic valve stenosis",
-      "category": "cardiovascular",
-      "subcategory": "structural",
-      "status": "suspected",
-      "onset": "April 1967",
-      "evidence": [
-        {
-          "note_id": "text_1",
-          "line_no": 122,
-          "span": "aortic valve stenosis"
-        }
-      ]
-    },
-    {
-      "condition_name": "Apoplexy",
+      "condition_name": "Stroke",
       "category": "neurological",
       "subcategory": "cerebrovascular",
       "status": "resolved",
-      "onset": "April 1967",
+      "onset": "2016",
       "evidence": [
-        {
-          "note_id": "text_0",
-          "line_no": 16,
-          "span": "Status post apoplexy"
-        }
-      ]
-    },
-    {
-      "condition_name": "Anemia",
-      "category": "hematological",
-      "subcategory": "cytopenia",
-      "status": "active",
-      "onset": "April 1967",
-      "evidence": [
-        {
-          "note_id": "text_3",
-          "line_no": 17,
-          "span": "Anemia requiring transfusion"
-        },
         {
           "note_id": "text_4",
-          "line_no": 20,
-          "span": "Transfusion-dependent anemia"
-        }
-      ]
-    },
-    {
-      "condition_name": "Protein malnutrition",
-      "category": "metabolic_endocrine",
-      "subcategory": "nutritional_deficiency",
-      "status": "active",
-      "onset": "April 1967",
-      "evidence": [
-        {
-          "note_id": "text_2",
           "line_no": 35,
-          "span": "Protein malnutrition"
+          "span": "History of stroke"
         }
       ]
     }
